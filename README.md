@@ -8,3 +8,7 @@ Credit-
 [Nazmul Hasan Nero](https://github.com/cknazmul)  
 Software Product Manager, Scrum Master, Writer  
 [nhnero.info](https://nhnero.info/)
+
+## Screenshots
+![Screenshot](screenshots/screenshot1.jpg)  
+![Screenshot](screenshots/screenshot2.jpg)
