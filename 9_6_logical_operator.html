@@ -1,0 +1,181 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+            border: 1px solid;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">লজিক্যাল অপারেটর(Logical Operator):</h4>
+                            <br>
+                            <p align="justify">ধরো তোমাকে বলা হলো প্রজ্ঞা আর প্রাচী দু&rsquo;জনের বয়সই যদি ১৮ হয় তাহলে বাজার থেকে একটা কেক আনো। তখন তুমি কি করবে প্রজ্ঞা এবং প্রাচী দু&rsquo;জনের বয়সই শুনবে এবং দুটোই যদি ১৮ হয় তাহলে বাজারে দৌড়ুবে কেক আনতে।</p>
+                            <p align="justify">এটা দুটো কন্ডিশনই যদি সত্য হয় তাহলে একটা কাজ করবে তার একটা উদাহরণ।</p>
+                            <p align="justify">প্রোগ্রামকে দিয়েও তোমার মাঝে মাঝে এরকম দুটো কন্ডিশন চেক করিয়ে দুটোই যদি সত্য হয় তখন কোন কাজ করাতে হতে পারে।</p>
+                            <p align="justify">আবার অনেকগুলো কন্ডিশনের মধ্যে যে কোন একটা সত্য হলে প্রোগ্রাম কোন একটি কাজ করবে এরকমও হতে পারে।</p>
+                            <p align="justify">এই ধরনের সিচুয়েশনগুলোতে লজিক্যাল অপারেটর তোমাকে সাহায্য করবে।</p>
+                            <p align="justify">এই চ্যাপ্টারেও কোন কিছুই এখন কোড লিখে প্র্যাকটিস করার দরকার নেই। ডিসিশন মেকিং(Decision Making) চ্যাপ্টারে আমরা সব উদাহরণই প্র্যাকটিস করে দেখবো। আপাতত ভালো করে চ্যাপ্টারটি পড়বে।</p>
+                            <br>
+                            <p align="justify"><strong>&amp;&amp; (Logical AND):</strong></p>
+                            <p align="justify">এই অপারেটরটি তখনই তোমাকে true রেজাল্ট প্রদান করবে যখন দেখবে এর দুই পাশের দুটি অপারেন্ডের ভ্যালু বা রেজাল্টই true।</p>
+                            <p align="justify">যেমন:</p>
+                            <br><img class="img" src="img/content_images/9_6_logical_operator_1.png"><br><br>
+                            <p align="justify">praggaAge == 18 এর রেজাল্ট true সেটা তো আমরা == (Operator) চ্যাপ্টারেই বুঝেছি। কারণ praggaAge ভেরিয়েবল এর ভ্যালু 18 এবং ডান পাশেও আছে 18। এবং যেহেতু &amp;&amp; এর দুই পাশেই ফলাফল আসছে true সুতরাং &amp;&amp; তোমাকে true রেজাল্ট দেবে।</p>
+                            <p align="justify">আর যদি এরকম লিখি:</p>
+                            <br><img class="img" src="img/content_images/9_6_logical_operator_2.png"><br><br>
+                            <p align="justify">ফলাফল আসবে false কারণ prachiAge ভেরিয়েবল এর মান 18 কিন্তু ডান পাশের অপারেন্ড 19।</p>
+                            <p align="justify">এবার আমরা অন্য একটা উদাহরণ দিয়ে দেখি।</p>
+                            <p align="justify">আমরা ডাটা টাইপ চ্যাপ্টারে boolean নামে একটি ডাটা টাইপ দেখেছিলাম মনে আছে? যার ভ্যালু কখনো true বা false ছাড়া অন্য কিছু হতে পারবে না।</p>
+                            <p align="justify">সেটা দিয়ে একটা উদাহরণ দেখি।</p>
+                            <br><img class="img" src="img/content_images/9_6_logical_operator_3.png"><br><br>
+                            <p align="justify">এর রেজাল্ট আসবে true। কারণ &amp;&amp; অপারেটরের দুই পাশের অপারেন্ডের ভ্যালুই true।</p>
+                            <p align="justify">এক্ষেত্রে একটা বিষয় উল্লেখ্য যে &amp;&amp; অপারেটর দিয়ে কিন্তু তুমি শুধু দুইটি কন্ডিশনই চেক করতে পারবে এমন না। তুমি অনেকগুলো কন্ডিশন এক সাথে চেক করতে পারো।</p>
+                            <p align="justify">যেমন দেখো:</p>
+                            <br><img class="img" src="img/content_images/9_6_logical_operator_4.png"><br><br>
+                            <p align="justify">তাহলে প্রোগ্রাম সবগুলো কন্ডিশনই যদি true পায় তাহলেই শুধু তোমাকে true রেজাল্ট দেবে। কিন্তু যে কোন একটা কন্ডিশন যদি false হয় তাহলে রেজাল্ট হবে false।</p>
+                            <p align="justify"><br /><br /></p>
+                            <p align="justify"><strong>|| (Logical OR):</strong></p>
+                            <p align="justify">এবার যদি তোমাকে বলা হয় তোমার পাঁচ জন বন্ধুর যে কারো যদি আজকে বার্থডে হয় তাহলে বাজার থেকে কেক নিয়ে আসো। তখন তুমি সবারই বয়স চেক করবে তারপর যদি দেখো কোন এক জনের আজকে বার্থডে তাহলে বাজার থেকে কেক নিয়ে আসবে।</p>
+                            <p align="justify">বা প্রোগ্রামকে বলা হলো অনেকগুলো কন্ডিশনের মধ্যে যদি একটি কন্ডিশনও সত্য হয় তাহলে কোন একটি কাজ করতে।</p>
+                            <p align="justify">এরকম ক্ষেত্রে || (Logical OR) অপারেটর ব্যবহৃত হয়। এটিকে যতগুলো কন্ডিশন দেয়া হয় সবগুলোর মধ্যে এ্যাট লিষ্ট একটি কন্ডিশন যদি true হয় তাহলে সে রেজাল্ট দেবে true।</p>
+                            <br><img class="img" src="img/content_images/9_6_logical_operator_5.png"><br><br>
+                            <p align="justify">এখানে শুধু (myAge == 15) এর রেজাল্ট শুধু true বাকী সবগুলোর রেজাল্টই কিন্তু false কিন্তু মাত্র একটা কন্ডিশন true হওয়ার কারণে প্রোগ্রাম তোমাকে রেজাল্ট দেবে true।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

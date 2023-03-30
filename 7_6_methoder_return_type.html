@@ -1,0 +1,222 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">মেথডের রিটার্ন টাইপ(Return Type)</h4>
+                            <br>
+                            <p>আমরা বলেছিলাম যে প্রাচী নুডলস রান্না করতে পারে আবার টাকাও গুনতে পারে। এখন প্রজ্ঞা বললো, প্রাচী এক বাটি নুডলস রান্না করে নিয়ে আসো তো।</p>
+                            <p>এখানে কিন্তু প্রজ্ঞা দুই ভাবে কথাটা বলতে পারে:</p>
+                            <ul>
+                                <li>
+                                    <p>প্রাচী নুডলস রান্না করো তো। অথবা</p>
+                                </li>
+                                <li>
+                                    <p>প্রাচী নুডলস রান্না করে নিয়ে আসো তো।</p>
+                                </li>
+                            </ul>
+                            <p><br /><br /></p>
+                            <p>দুটো কথার মধ্যে কিন্তু পার্থক্য আছে। প্রজ্ঞা যদি বলে প্রাচী নুডলস রান্না করে নিয়ে আসো তো। তাহলে প্রাচী এক বাটি নুডলস রান্না করে নিয়ে এসে প্রজ্ঞাকে দেবে। আর যদি শুধু বলে প্রাচী নুডলস রান্না করো তো। তাহলে সে কিন্তু শুধু নুডলস রান্না করে বসে থাকতে পারে। কারণ তাকে বলা হয় নি যে সেটা আবার প্রজ্ঞাকে কে এনে দিতে হবে।</p>
+                            <p>মেথডের রিটার্ন টাইপ(Return Type) বিষয়টা এরকমই। তুমি একটি মেথড বানালে যে 12 আর 19 যোগ করার জন্য। সেই মেথডে যদি তুমি Return করতে না বলো তাহলে মেথডটি শুধু 12 আর 19 যোগ করে রেখে দেবে। কারণ তুমি তাকে বলো নি যে যোগফল তোমার কাছে আবার ফেরত পাঠাতে।</p>
+                            <p>নিচের প্রোগ্রামটি দেখো।</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_1.png"><br><br>
+                            <p>এই প্রোগ্রামটি তোমার কথামত ঠিকই 12 আর 19 যোগ করবে। এবং করে বসে থাকবে। তুমি প্রোগ্রামটি রান করেও দেখতে পারো। স্ক্রীণের আউটপুটে কিছুই দেখতে পাবে না।</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_2.png"><br><br>
+                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_3.png"><br><br>
+                            <p>এখন তুমি যদি চাও যে তোমার ওই মেথডটি যোগফলটি বের করে তোমার কাছে ফেরত পাঠাবে এবং সেই Result দিয়ে তুমি অন্য কিছু করবে। তাহলে তোমাকে ওই মেথডটিকে বলতে হবে যোগফলটি Return করতে। সেটার জন্য তোমাকে কিছু নিয়মে কাজ করতে হবে।</p>
+                            <p>প্রথমত: রিটার্ন টাইপ(Return Type) সেট করে দিতে হবে।</p>
+                            <p>দ্বিতীয়ত: মেথডটি সব কাজ শেষ করে যে রেজাল্টটি বের হল সেটা return কীওয়ার্ড এর মাধ্যমে রিটার্ন করতে হবে মেথডের শেষ লাইনে।</p>
+                            <p>চলো একটি উদাহরণ দেখি:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_4.png"><br><br>
+                            <p>দেখো আমরা void এর জায়গায় int লিখেছি এটিই হল রিটার্ন টাইপ। অর্থাৎ তোমার মেথডটি যা রিটার্ন করবে তার ডাটা টাইপ কি। আগে আমরা void লিখতাম কারণ আগের মেথডগুলো কোন কিছুই রিটার্ন করতো না। কোন মেথড যদি কোন কিছু রিটার্ন না করে তাহলে তার রিটার্ন টাইপ হবে void আর যখন রিটার্ন করবে তখন যে ভ্যালুটি রিটার্ন করবে তার ডাটা টাইপটি বলে দিতে হবে। সেটা হতে পারে int, float, boolean, String, char যে কোন কিছু। আমাদের ফাইনাল রেজাল্টটি আছে sum ভেরিয়েবলে এবং 12 আর 19 এর যোগফল 31 এটি একটি integer ভ্যালু। সুতরাং আমরা রিটার্ন টাইপ দিয়েছি int । এবং এর অর্থ হল রিটার্ন টাইপ সেট করার আগে তোমাকে অবশ্যই জানতে হবে যে ফাংশনটি কি টাইপের ডাটা রিটার্ন করতে পারবে।</p>
+                            <p>এবং এখানে সমস্ত কাজ শেষে যে রেজাল্টটি দাঁড়াচ্ছে সেই রেজাল্টটি আছে sum ভেরিয়েবল এর মধ্যে। আর আমরা return কীওয়ার্ড এর মাধ্যমে return sum; এভাবে sum ভেরিয়েবলকে রিটার্ন করেছি।</p>
+                            <p>চলো এবার মেথডটিকে কল করে দেখি কী দাঁড়ায়।</p>
+                            <p><br /><br /></p>
+                            <p>মেথডটি:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_5.png"><br><br>
+                            <p>main মেথড থেকে তাকে কল করা হলো:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_6.png"><br><br>
+                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_7.png"><br><br>
+                            <p>আউটপুটে কিছু আসে নি। আউটপুট ব্ল্যাংক।</p>
+                            <p>আসলে আমরা ভুল কিছু করি নি। সব কিছুই ঠিকঠাক মতোই করেছি। এবং আমরা যখন মেথডটিকে কল করেছি মেথডটি আমাদের ঠিকই 19 রিটার্ন করেছে। কিন্তু আমরা প্রোগ্রামকে বলি নি যে রিটার্নকৃত ভ্যালুটি নিয়ে কি করবে। তাহলে চলো রিটার্ন ভ্যালু নিয়ে কিছু একটা করি।</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_8.png"><br><br>
+                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_9.png"><br><br>
+                            <p>ওই যে আমরা বলেছিলাম যে মেথডটি ঠিকই ভ্যালু রিটার্ন করছে কিন্তু আমরা সেই ভ্যালুটিকে নিয়ে কিছু করি নি। কিন্তু এখন আমরা ভ্যালুটিকে একটি ভেরিয়েবল এর মধ্যে রেখে দিচ্ছি এবং সেটিকে নিয়ে আরো অনেক অপারেশন চালিয়ে একদম শেষ ফলাফলটি স্ক্রীণে প্রিন্ট করছি।</p>
+                            <p>তাহলে শেষমেষ গল্পটা যা দাঁড়ালো, প্রজ্ঞা প্রাচীকে বললো নুডলস রান্না করে আনো তো। প্রাচী নুডলস রান্না করে নিয়ে এলো এবং প্রজ্ঞা নুডলস এর বাটি হাতে নিয়ে তাতে সস মেখে খেয়ে ফেললো।</p>
+                            <p>এরকম আরো কিছু উদাহরণ দেখি চলো।</p>
+                            <p>মেথড:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_10.png"><br><br>
+                            <p>কল:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_11.png"><br><br>
+                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_12.png"><br><br>
+                            <p>আশা করছি তোমাদের মনে প্রশ্নের উদয় হয়েছে।</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_13.png"><br><br>
+                            <p>এই লাইনটার ব্যাপারে। এখানে + (Addition) অপারেটর আসলে কনক্যাটেনেশনের(Concatenation) কাজ করছে। Concatenation অর্থ ষ্ট্রিং এর সাথে ভেরিয়েবলকে জোড়া লাগানো যেমন: &ldquo;Our names are&rdquo; এইটুকু হলো String আর myName হলো ভেরিয়েবল। এই দুটিকে যখন জোড়া দেওয়ার প্রয়োজন পড়ে তখন + অপারেটরটি ব্যবহার করতে হয়। এই + (Addition) অপারেটরটি দুই ধরনের কাজ করতে পারে।</p>
+                            <ol>
+                                <li>
+                                    <p>দুটো ম্যাথমেটিক্যাল নাম্বারকে যোগ করতে পারে</p>
+                                </li>
+                                <li>
+                                    <p>ষ্ট্রিং এর সাথে ভেরিয়েবলকে বা অন্য কোন ডাটাকে জোড়া লাগিয়ে নতুন ষ্ট্রিং তৈরী করতে পারে</p>
+                                </li>
+                            </ol>
+                            <p>এই আলোচনাটুকু এখানে প্রাসঙ্গিকভাবে এসে গেলো। অপারেটর চ্যাপ্টারে আমরা আরো অন্যান্য অপারেটরের সাথে কনক্যাটেনেশন(Concatenation) অপারেটর নিয়ে আরো আলোচনা করবো। চলো আপাতত আমরা আগের জায়গায় ফিরে যাই।</p>
+                            <p>আমরা মেথডের ভ্যালু রিটার্নের বিভিন্ন উদাহরণ দেখছিলাম। আরেকটি উদাহরণ দেখি।</p>
+                            <p>মেথড:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_14.png"><br><br>
+                            <p>কল:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_15.png"><br><br>
+                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_16.png"><br><br>
+                            <p>মেথড:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_17.png"><br><br>
+                            <p>কল:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_18.png"><br><br>
+                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/7_6_methoder_return_type_19.png"><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

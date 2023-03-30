@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">ডাটা:</h4>
+                            <br>
+                            <p>ধরো তোমাকে জিজ্ঞেস করা হলো তোমার নাম কি? <br />তুমি বললে &ldquo;Pragga Mashiat&rdquo;<br />এই যে Pragga Mashiat এটিই হলো একটি ডাটা।<br />আবার জিজ্ঞেস করা হলো তোমার বয়স কত?<br />তুমি বললে &ldquo;15&rdquo;<br />এটিও একটি ডাটা।<br />জেএসসি তে তোমার পয়েন্ট কত ছিল?<br />তুমি বললে &ldquo;4.85&rdquo;<br />এটিও একটি ডাটা। <br />তোমার যমজ বোন আছে?<br />তুমি বললে YES<br />এটিও একটি ডাটা। <br />মূল বিষয়টা হলো তোমার কাছে যা তথ্য আছে তার সবকিছুই এক একটি ডাটা। আর কম্পিউটার প্রোগ্রাম মূলত যা করে তার সব কিছুই এই ডাটাকে ঘিরেই। সেটা বোঝার জন্য চলো একটা উদাহরণ দেখি। <br /><br /><br /></p>
+                            <p>ধরো তোমার হাতে একটি ক্যালকুলেটর আছে। <br />তুমি ক্যালকুলেটরে 4 এ চাপ দিলে <br />তারপর + এ চাপ দিলে<br />এবার চাপ দিলে 5 এ<br />সবশেষে = তে চাপ দেয়া মাত্র ক্যালকুলেটরের স্ক্রীণে 9 ভেসে উঠবে।</p>
+                            <p>এখানে 4, 5 এবং 9 সবগুলোই এক-একটি ডাটা। ক্যালকুলেটরটি 4 এবং 5 এই দু&rsquo;টি ডাটা তোমার কাছ থেকে নিয়ে সেটাকে প্রসেস করে 9 ডাটাটি তোমাকে দিয়েছে।</p>
+                            <p>তুমি যদি কম্পিউটারে প্রোগ্রামিং করে যোগের জন্য একটি সফটওয়্যার বানাও সেটিও ঠিক একইভাবে তোমার কাছ থেকে 4 এবং 5 নেবে এবং দু&rsquo;টাকে যোগ করে তোমাকে 9 প্রদান করবে।</p>
+                            <p align="justify">আর এটি শুধু যোগের বেলাতেই না, অন্য সকল ক্ষেত্রেও। সব ক্ষেত্রেই কম্পিউটার ডাটা গ্রহন করে এবং সেটাকে প্রসেস করে প্রসেসকৃত ডাটাটি প্রদান করে। আর একারণেই আমরা বলেছি যে প্রোগ্রামিং এর জগতে ঢুকে পড়ার শুরুতেই আমাদের ডাটা বোঝাটা গুরুত্বপূর্ণ।</p>
+                            <p align="justify">এবং আমরা ইতোমধ্যে দেখে ফেলেছি যে: Pragga Mashiat, 15, 4.85, YES সবগুলোই এক একটি ডাটা।</p>
+                            <p><br /><br /></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

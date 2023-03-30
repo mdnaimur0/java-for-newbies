@@ -1,0 +1,282 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+            border: 1px solid;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+        td, th {
+            padding: 4px 10px;
+            border: 1px solid;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading"> এ্যারে (Array):</h4>
+                            <br>
+                            <p align="justify">ভেরিয়েবল তো একটা বালতির মতো বা কনটেইনার তাই না? যাতে ডাটা রাখা যায়। ধরো তোমার কাছে কিছু ডাটা আছে এরকম: Water, Diesel, Petroleum, Juice, Cold Drinks</p>
+                            <p align="justify">এগুলোকে যদি ভেরিয়েবল এর মধ্যে রাখতে বলা হয় তুমি কি করবে। চলো দেখি।</p>
+                            <br><img class="img" src="img/content_images/10_0_array_ki_1.png"><br><br>                            <p>আউটপুট:</p>
+                            <p align="justify">দেখো 5 টা লাইন কোড লিখতে হচ্ছে ডাটাগুলো রাখার জন্য। এরকম যদি 500 টা ডাটা থাকে তোমার কাছে তাহলে 500 লাইন কোড লিখতে হবে।</p>
+                            <p align="justify">কিন্তু এ্যারে(Array) তোমাকে এই কষ্ট থেকে বাঁচিয়ে দিতে পারে।</p>
+                            <p align="justify">এ্যারেও আসলে ভেরিয়েবল এর মতোই। কিন্তু এর সুবিধা হলো এখানে একটা ভেরিয়েবল এর মধ্যেই একই টাইপের অনেক অনেক ডাটা রাখা যায়।</p>
+                            <p align="justify">যেমন দেখো আমরা এক লাইনের মধ্যেই কিভাবে এতগুলো ডাটা রেখে দিতে পারি Array ব্যবহার করে।</p>
+                            <br><img class="img" src="img/content_images/10_0_array_ki_2.png"><br><br>                            <p>আউটপুট:</p>
+                            <p align="justify">আচ্ছা আমরা সুবিধাটা বুঝলাম এখন সিনট্যাক্সটা দেখি। এ্যারেতে ডাটাটা রাখার সিনট্যাক্স হলো এরকম।</p>
+                            <p align="justify">data_type array_name[] = {data1, data2, data3,&hellip;.datan};</p>
+                            <p align="justify">এখানে তুমি n সংখ্যক অর্থাৎ যতগুলো ইচ্ছা ডাটা রাখতে পারবে।</p>
+                            <p align="justify">কিন্তু শর্ত হলো একটি এ্যারেতে তোমাকে অবশ্যই একই ধরণের ডাটা রাখতে হবে। একটা এ্যারেতে মাল্টিপল টাইপের ডাটা রাখতে পারবে না। এই ব্যাপারটা মনে রাখা খুবই গুরুত্বপূর্ণ।</p>
+                            <p align="justify">যেমন দেখো:</p>
+                            <br><img class="img" src="img/content_images/10_0_array_ki_3.png"><br><br>                            <p>আউটপুট:</p>
+                            <p align="justify">এ্যারের টাইপ বলেছি String কিন্তু একটা ডাটা অন্য টাইপের মানে ইন্টিজার রেখেছি আর সাথে সাথে এরর(Error) দেখাচ্ছে।</p>
+                            <p align="justify">এবার এ্যারেতে ডাটা রাখার আরেকটি সুবিধা দেখি।</p>
+                            <p align="justify">ধরো তুমি পাঁচটা ভেরিয়েবলে পাঁচটা ডাটা রেখেছ। পাঁচটাকে এখন প্রিন্ট করতে চাচ্ছ। তাহলে কি করবে? এরকম করতে হবে না?</p>
+                            <br><img class="img" src="img/content_images/10_0_array_ki_4.png"><br><br>                            <p>আউটপুট:</p>
+                            <p align="justify">কিন্তু এ্যারের ডাটাগুলো প্রিন্ট বা ব্যবহার করার জন্য এরকম প্রত্যেকটি ভেরিয়েবলের নাম আলাদাভাবে বলার দরকার নেই। এ্যারের নামের সাথে শুধু ইনডেক্স(index) নাম্বারটা বলে দিলেই হলো।</p>
+                            <br><img class="img" src="img/content_images/10_0_array_ki_5.png"><br><br>                            <p>আউটপুট:</p>
+                            <p align="justify">ব্যাপারটা আরো সহজ তাই না?</p>
+                            <p align="justify">কিন্তু এখানে আবার নতুন প্রশ্ন। তাহলে ইনডেক্স আবার কি?</p>
+                            <p align="justify">ধরো তুমি একটা টেবিল বানালে এরকম:</p>
+                            <table width="264" cellspacing="0" cellpadding="7"><colgroup><col width="87" /> <col width="147" /> </colgroup>
+                                <tbody>
+                                <tr valign="top">
+                                    <td width="87">
+                                        <p align="justify">1</p>
+                                    </td>
+                                    <td width="147">
+                                        <p align="justify">Water</p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="87">
+                                        <p align="justify">2</p>
+                                    </td>
+                                    <td width="147">
+                                        <p align="justify">Diesel</p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="87">
+                                        <p align="justify">3</p>
+                                    </td>
+                                    <td width="147">
+                                        <p align="justify">Petroleum</p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="87">
+                                        <p align="justify">4</p>
+                                    </td>
+                                    <td width="147">
+                                        <p align="justify">Juice</p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="87">
+                                        <p align="justify">5</p>
+                                    </td>
+                                    <td width="147">
+                                        <p align="justify">Cold Drinks</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p align="justify">এখানে যে বাম পাশে কলামে যে 1 থেকে 5 আছে এটাই হচ্ছে ইনডেক্স। যেমন Juice এর ইনডেক্স হচ্ছে 4।</p>
+                            <p align="justify">এরকম তুমি যখন এ্যারেতে ডাটা রাখো তখন সেটা অটোমেটিক ইনডেক্স তৈরী করে নেয় প্রত্যেকটি ডাটার জন্য। যাতে প্রত্যেকটি ডাটাকে আলাদাভাবে খুঁজে পাওয়া যায়। এই টেবিলে যেমন তুমি Juice কে খুঁজে পাবার জন্য 4 ব্যবহার করেছ।</p>
+                            <p align="justify">কিন্তু এ্যারের ইনডেক্সে সামান্য একটি পার্থক্য আছে। তুমি এখানে শুরু করেছ 1 থেকে কিন্তু এ্যারেতে যখন ডাটা রাখো তার ইনডেক্সিং শুরু হয় 0 থেকে। যেমন প্রথম ডাটা Water এর ইনডেক্স হচ্ছে 0। আর সর্ব শেষ ডাটাটির ইনডেক্স হয় মোট ডাটার পরিমানের চেয়ে 1 কম। যেমন এ্যারেতে Cold Drinks ডাটাটির ইনডেক্স হচ্ছে 4।</p>
+                            <p align="justify"><br /><br /></p>
+                            <p align="justify"><br /><br /></p>
+                            <p align="justify"><br /><br /></p>
+                            <p align="justify">অর্থাৎ এভাবে:</p>
+                            <table width="264" cellspacing="0" cellpadding="7"><colgroup><col width="87" /> <col width="147" /> </colgroup>
+                                <tbody>
+                                <tr valign="top">
+                                    <td width="87">
+                                        <p align="justify">0</p>
+                                    </td>
+                                    <td width="147">
+                                        <p align="justify">Water</p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="87">
+                                        <p align="justify">1</p>
+                                    </td>
+                                    <td width="147">
+                                        <p align="justify">Diesel</p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="87">
+                                        <p align="justify">2</p>
+                                    </td>
+                                    <td width="147">
+                                        <p align="justify">Petroleum</p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="87">
+                                        <p align="justify">3</p>
+                                    </td>
+                                    <td width="147">
+                                        <p align="justify">Juice</p>
+                                    </td>
+                                </tr>
+                                <tr valign="top">
+                                    <td width="87">
+                                        <p align="justify">4</p>
+                                    </td>
+                                    <td width="147">
+                                        <p align="justify">Cold Drinks</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p align="justify"><br /><br /></p>
+                            <p align="justify">এ্যারেতে ডাটা রাখার আরো একটি মজার সুবিধা হচ্ছে মাত্র তিন লাইন কোড লিখেই একটা এ্যারেতে রাখা হাজারটি ডাটা তুমি দেখতে পারবে। এটা আমরা পরে লুপিং(Looping) চ্যাপ্টারে foreach লুপে গিয়ে দেখবো।</p>
+                            <p align="justify">উপরের উদাহরণে আমরা এ্যারেতে ডাটা রাখার একটি নিয়ম দেখেছি। এভাবে আমরা এ্যারেতে ডাটা রেখেছিলাম।</p>
+                            <br><img class="img" src="img/content_images/10_0_array_ki_6.png"><br><br>                            <p>আউটপুট:</p>
+                            <p align="justify">এ্যারেতে অন্য আরেকটা উপায়েও ডাটা রাখা যায়। নিয়মটা হলো এরকম:</p>
+                            <br><img class="img" src="img/content_images/10_0_array_ki_7.png"><br><br>                            <p>আউটপুট:</p>
+                            <p align="justify">এটা আসলে আমরা এ্যারেটি ডিক্লেয়ার করলাম। আর ডিক্লেয়ার করার সময় এ্যারেটিতে কি পরিমান ডাটা রাখবো, এক্ষেত্রে 5 টি, এটাও বলে দিতে হবে।</p>
+                            <p align="justify">এখন এই এ্যারেতে আমরা ডাটা রাখবো এভাবে।</p>
+                            <br><img class="img" src="img/content_images/10_0_array_ki_8.png"><br><br>                            <p>আউটপুট:</p>
+                            <p align="justify">আমরা আগেই জেনেছি যে এ্যারেতে ডাটা ইনডেক্সিং শুরু হয় 0 থেকে সুতরাং আমাদের 0 থেকে ডাটা রাখা শুরু করতে হবে। এ্যারেতে ডাটা রাখার জন্য আগের পন্থা আর এই পন্থা একই। শুধু একটা পার্থক্য আছে। সেটা হলো এ্যারেটি ডিক্লেয়ার করার সময় তুমি কত পরিমান ডাটা রাখবে এই এ্যারেতে তা তুমি আগেই বলে দিচ্ছো অর্থাৎ এই উদাহরণে 5। এবং ডিক্লেয়ার করার সময় যে পরিমানটা বলে দেবে ডাটা রাখার সময় তার বেশি ডাটা তুমি এ্যারেতে রাখতে পারবে না।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+            border: 1px solid;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+        td, th {
+            padding: 4px 10px;
+            border: 1px solid;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">Encapsulation and Access Modifiers</h4>
+                            <br>
+                            <p>ধরো তোমার কার কোম্পানিতে কয়েক জন ডিজাইনার আছে এবং তারা সবাই বেসিক কারের ডিজাইন থেকে নতুন নতুন ডিজাইন তৈরী করে। এখন তুমি চাচ্ছ বেসিক কারের যে ডিজাইন আছে তা থেকে বেশির ভাগ জিনিসই তারা নিতে পারবে কিন্তু কিছু কিছু ডিজাইন তাদের কাছ থেকে গোপন রাখবে।</p>
+                            <p>তাহলে এই ব্যাপারটা আমাদের প্রোগ্রামিং এ কেমন দাঁড়ায় আসলে। আমাদের একটি BasicCar ক্লাশ আছে এবং ডিজাইনাররা নতুন একটি ক্লাশ তৈরী করার সময় BasicCar ক্লাশটিকে Extend করে এবং BasicCar ক্লাশের সবগুলো মেথড এবং ভেরিয়েবল পেয়ে যায়। কিন্তু আমরা চাচ্ছি যে তারা যখন আমাদের BasicCar ক্লাশটিকে Extend করে নতুন একটি ক্লাশ বানাবে তখন তারা যেন কিছু কিছু মেথড এবং ভেরিয়েবলে এ্যাকসেস না পায়।</p>
+                            <p align="justify">এই যে চাইল্ড ক্লাশের কাছে প্যারেন্ট ক্লাশের কিছু কিছু ভেরিয়েবল এবং মেথড, এবং সেই সাথে ক্লাশের কন্সট্রাকটর(Constructor)[এটি একটু পরেই আলোচনা করা হবে] এবং ক্লাশ নিজেকে গোপন রাখা এটাই হলো প্রোগ্রামিং এর ভাষায় এনক্যাপসুলেশন (Encapsulation)।</p>
+                            <p>আর এনক্যাপসুলেশন(Encapsulation) ইমপ্লিমেন্ট করার জন্য জাভাতে Access Modifier ব্যবহার করা হয়। কয়েক ধরণের Access Modifier আছে জাভাতে। যেমন:</p>
+                            <ul>
+                                <li>
+                                    <p>private</p>
+                                </li>
+                                <li>
+                                    <p>public</p>
+                                </li>
+                                <li>
+                                    <p>protected</p>
+                                </li>
+                            </ul>
+                            <p>&nbsp;</p>
+                            <p>প্রাইভেট(private):</p>
+                            <p>প্রথমেই প্রাইভেট(private) নিয়ে আলোচনা শুরু করি।</p>
+                            <p>&nbsp;</p>
+                            <p>ভেরিয়েবলের ক্ষেত্রে:</p>
+                            <p>যখনই তুমি কোন ক্লাশের কোন ভেরিয়েবলকে private করে দেবে তখন ওই ভেরিয়েবলটি শুধু ওই ক্লাশের মধ্যেই এ্যাকসেসেবল হবে কিন্তু অন্য কোন ক্লাশ যদি ওই ক্লাশকে Extend করে তাহলে ওই প্রাইভেট ভেরিয়েবলকে এ্যাকসেস করতে পারবে না। কোন ভেরিয়েবলকে প্রাইভেট করে দেবার নিয়ম হল এরকম:</p>
+                            <br><img class="img" src="img/content_images/16_6_encapsulation_and_access_modifiers_1.png"><br><br>
+                            <p>ভেরিয়েবলটির সর্বাগ্রে শুধু private কথাটা লিখে দিতে হবে।</p>
+                            <p>এখন আমরা এই একই ক্লাশ থেকে wheel ভেরিয়েবলটিকে এ্যাকসেস করার চেষ্টা করি।</p>
+                            <p>&nbsp;</p>
+                            <p>BasicCar ক্লাশে showWheel এই মেথডের মাধ্যমে wheel নামের private ভেরিয়েবলটিকে এ্যাকসেস করার চেষ্টা করলাম।</p>
+                            <br><img class="img" src="img/content_images/16_6_encapsulation_and_access_modifiers_2.png"><br><br>
+                            <p>এবং BasicCar ক্লাশের একটি অবজেক্ট বানিয়ে মেথডটিকে কল করলাম</p>
+                            <br><img class="img" src="img/content_images/16_6_encapsulation_and_access_modifiers_3.png"><br><br>
+                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/16_6_encapsulation_and_access_modifiers_4.png"><br><br>
+                            <p>&nbsp;</p>
+                            <p>এখন আমরা private ভেরিয়েবল wheel কে চাইল্ড ক্লাশ থেকে এ্যাকসেস করার চেষ্টা করি।</p>
+                            <br><img class="img" src="img/content_images/16_6_encapsulation_and_access_modifiers_5.png"><br><br>
+                            <p>দেখো আমাদেরকে চাইল্ড ক্লাশ থেকে প্যারেন্ট ক্লাশের wheel ভেরিয়েবলটিকে এ্যাকসেস করতে দিচ্ছে না। এখানে আবার খেয়াল রেখো যে আমরা তো আগের প্র্যাকটিসে BronoxCar ক্লাশে wheel ভেরিয়েবলটির নতুন ভ্যালু সেট করেছিলাম। তাই আগে সেটিকে উপরের মতো কমেন্ট করে নিও।</p>
+                            <p>&nbsp;</p>
+                            <p>মেথডের ক্ষেত্রে:</p>
+                            <p>মেথডের ক্ষেত্রেও একই ব্যাপার। তুমি প্যারেন্ট ক্লাশে কোন মেথডকে private করলে শুধু ওই ক্লাশ থেকেই মেথডটিকে কল করতে পারবে, চাইল্ড ক্লাশ থেকে কল করতে পারবে না। আর মেথডকে private করার জন্য মেথডের সর্বাগ্রে private কথাটি লিখে দিতে হবে।</p>
+                            <br><img class="img" src="img/content_images/16_6_encapsulation_and_access_modifiers_6.png"><br><br>
+                            <p>এখন যদি চাইল্ড ক্লাশ থেকে কল করতে যাই:</p>
+                            <br><img class="img" src="img/content_images/16_6_encapsulation_and_access_modifiers_7.png"><br><br>
+                            <p>অর্থাৎ তুমি এ্যাকসেস করতে পারবে না।</p>
+                            <p>&nbsp;</p>
+                            <p>ক্লাশের ক্ষেত্রে:</p>
+                            <p>ক্লাশকে কখনো তুমি private করতে পারবে না।</p>
+                            <p>&nbsp;</p>
+                            <p>পাবলিক(public):</p>
+                            <p>publice মডিফায়ারটি private এর একদম উল্টো। অর্থাৎ যদি তুমি কোন মেথড বা ভেরিয়েবলকে public করে দাও তাহলে তুমি সেটাকে যে কোন চাইল্ড ক্লাশ থেকে এ্যাকসেস করতে পারবে।</p>
+                            <p>&nbsp;</p>
+                            <p>প্রটেকটেড(Protected):</p>
+                            <p>এটা বোঝা তোমাদের জন্য একটু কঠিন হয়ে যেতে পারে। তাই আপাতত আমরা এটি বাদ রাখছি এই মুহূর্তে। পরের আপডেটে এটি আলাদা চ্যাপ্টার করা হবে।</p>
+                            <p>&nbsp;</p>
+                            <p>আর হ্যাঁ, আমরা inheritance চ্যাপ্টারে যে বলেছিলাম কোন চাইল্ড ক্লাশকে কোন প্যারেন্ট ক্লাশ থেকে extend করলে সেই চাইল্ড ক্লাশটি প্যারেন্ট ক্লাশের সব মেথড ও ভেরিয়েবলকে পেয়ে যায়। কথাটা আংশিক মিথ্যা ছিলো। এখন আশা করি বুঝেছো যে শুধু পাবলিকগুলোই পাবে।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

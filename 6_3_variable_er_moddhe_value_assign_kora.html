@@ -1,0 +1,165 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">ভেরিয়েবল(Variable) এর মধ্যে ভ্যালু(Value) এ্যাসাইন(Assign) করা:</h4><br>
+                            <br>
+                            <p align="justify">ভেরিয়েবল এর মধ্যে ভ্যালু এ্যাসাইন করার অর্থ হলো ভেরিয়েবলটিতে ডাটা রাখা। ভেরিয়েবল ডিক্লেয়ার করতে হয় কিভাবে আমরা দেখলাম। এখন এই ভেরিয়েবল গুলোর মধ্যে আমরা ডাটা রাখতে পারবো। এর নিয়মটা হলো এরকম:</p>
+                            <p><em>variable_name = data;</em></p>
+                            <p>অর্থাৎ প্রথমে ভেরিয়েবল এর নামটি দিতে হবে, এরপর একটা Equal Sign(=), তারপর ডাটা।</p>
+                            <p>নিচের কোডটি দেখো<em>:</em></p>
+                            <br><img class="img" src="img/content_images/6_3_variable_er_moddhe_value_assign_kora.png"><br><br>                            <p>প্রথমটি দেখো:</p>
+                            <p>আমাদের ভেরিয়েবল এর নাম হচ্ছে name আর আমাদের ডাটা হচ্ছে Pragga Mashiat</p>
+                            <p>আমরা প্রথমে ভেরিয়েবলটির নাম লিখেছি name এবং আমাদের ডাটা বা ভ্যালু বসিয়েছি Pragga Mashiat এবং মাঝখানে একটি Equal Sign(=) ব্যবহার করেছি।</p>
+                            <p>এর অর্থ হচ্ছে কোন একটা ভেরিয়েবলে ডাটা বা ভ্যালু এ্যাসাইন করতে হলে বা ডাটা রাখতে হলে তোমাকে ভেরিয়েবল এর নাম এবং ডাটার মাঝখানে একটি Equal Sign(=) ব্যবহার করতে হবে।</p>
+                            <p>Equal Sign(=) এটিকে বলে Assignment Operator, আমরা যখন Java এর অপারেটর চ্যাপ্টার আসবো তখন আরো অনেকগুলো অপারেটর নিয়ে আলোচনা করবো।</p>
+                            <p>এরপর দেখো আমরা Pragga Mashiat এর দুই পাশে Double Quotation (&ldquo;&rdquo;) ব্যবহার করেছি। তুমি যখনই String টাইপের কোন ভেরিয়েবলে ডাটা রাখতে চাইবে তখনই ওই ডাটা বা ভ্যালু এর দুই পাশে Double Quotation ব্যবহার করতে হবে।</p>
+                            <p>এরকম অন্যান্য ডাটা টাইপের ক্ষেত্রেও কিছু নিয়ম মেনে ডাটা রাখতে হয়। যেমন:</p>
+                            <p>১. int টাইপের ক্ষেত্রে কোন কোটেশনের প্রয়োজন নেই। শুধু ভ্যালুটা লিখে দিলেই চলে। উপরের কোডে 25 নাম্বার লাইন দেখো।</p>
+                            <p>২. float এর ক্ষেত্রেও কোন কোটেশনের প্রয়োজন নেই কিন্তু ডাটা বা ভ্যালু এর শেষে একটা f লিখে দিতে হবে। 26 নাম্বার লাইনটা দেখো।</p>
+                            <p>৩. boolean এর ক্ষেত্রেও কোটেশন দিতে হবে না। কিন্তু আমরা আগেই বলেছি এর ভ্যালু yes/no এর বাইরে কিছু হতে পারবে না। শুধু একটু চেঞ্জ হবে। কম্পিউটার প্রোগ্রাম আসলে yes/no কে true/false হিসেবে চেনে। যার কারণে boolean টাইপের ক্ষেত্রে true/false যে কোন একটি ভ্যালু তুমি রাখতে পারবে। 27 নাম্বার লাইনটা দেখো।</p>
+                            <p>৪. char এর ডাটা রেঞ্জ তো আমরা জানি-ই। এখানে অবশ্যই A থেকে Z বা a থেকে z বা 0 থেকে 9 বা !@#$%^&amp;* প্রভৃতি Special Character এর মধ্যে যে কোন একটি ক্যারেক্টার আমরা রাখতে পারবো। এখানে আরেকটি নিয়ম অবশ্যই মানতে হবে। String এর ক্ষেত্রে যেখানে আমরা ডাটাটি Double Quotation এর মধ্যে রাখতাম, এক্ষেত্রে আমাদের ডাটা রাখতে হবে Single Quotation এর মধ্যে। 28 নাম্বার লাইনটা দেখো।</p>
+                            <p>এই চ্যাপ্টারটি খুবই গুরুত্বপূর্ণ। সুতরাং প্রয়োজনে তোমরা বারংবার প্র্যাকটিস করো যাতে ভুলে না যাও।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

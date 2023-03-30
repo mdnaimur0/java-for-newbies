@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+            border: 1px solid;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+        td, th {
+            padding: 4px 10px;
+            border: 1px solid;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">প্যারেন্ট ক্লাশ, চাইল্ড ক্লাশ এবং ইনহেরিটেন্স(Parent Class, Child Class and Inheritance)</h4>
+                            <br>
+                            <p>অনেক সময় দেখো না যে বাবার গায়ের রং কালো ছেলের গায়ের রংও কালো, বাবার রাগ বেশি ছেলেরও রাগ বেশি, মায়ের চুল অনেক লম্বা মেয়ের চুলও অনেক লম্বা, মা খুব সুন্দর মেয়েও খুব সুন্দর। এরকম ব্যাপার তো অহরহই চোখে পড়ে।</p>
+                            <p>বাস্তব জীবনে এটাই ইনহেরিট্যান্স(Inheritance) অর্থাৎ উত্তরাধিকার সূত্রে পাওয়া কিছু বৈশিষ্ট্য। OOP তেও ইনহেরিট্যান্স ব্যাপারটা এরকমই। যখন কোন নতুন ক্লাশকে তুমি অন্য কোন ক্লাশের চাইল্ড ক্লাশ(Child Class) বানাবে তখন ওই নতুন ক্লাশটি আগের ক্লাশের বৈশিষ্ট্যগুলো পেয়ে যায়। আগের ক্লাশটিকে তখন বলা হয় প্যারেন্ট ক্লাশ(Parent Class)। আর এখানে বৈশিষ্ট্য পাওয়া বলতে বুঝানো হচ্ছে প্যারেন্ট ক্লাশ এর ভেরিয়েবল এবং মেথড। অর্থাৎ যখন তুমি নতুন কোন ক্লাশকে অন্য কোন ক্লাশের চাইল্ড বানাবে তখন নতুন ক্লাশটি ওই ক্লাশের সমস্ত ভেরিয়েবল এবং মেথডকে পেয়ে যাবে।</p>
+                            <p>তাহলে দেখি আমরা কিভাবে কাজটি করা যায়। আমাদের তো BasicCar নামে একটি ক্লাশ ছিলো। আমরা এখন নতুন একটি ডিজাইনের কার তৈরী করবো। ধরো সেই কারের নাম দিলাম Bronox। তাহলে BronoxCar নামে একটি নতুন ক্লাশ বানিয়ে ফেলি আগের মতই, আগে যেভাবে নতুন ক্লাশ বানিয়েছিলাম।</p>
+                            <br><img class="img" src="img/content_images/16_4_parent_class_child_class_inheritance_1.png"><br><br>
+                            <p>নতুন একটি ক্লাশ তৈরী হয়ে গেল BronoxCar নামে। এখন এই ক্লাশটিকে যদি আমরা BasicCar ক্লাশের Child বানাতে চাই তাহলে সিম্পলি BasicCar ক্লাশটিকে এই ক্লাশে Extend করতে হবে।</p>
+                            <p>দেখো এরকমভাবে:</p>
+                            <br><img class="img" src="img/content_images/16_4_parent_class_child_class_inheritance_2.png"><br><br>
+                            <p>ব্যস কাজ শেষ। এখন BasicCar ক্লাশের যত মেথড এবং ভেরিয়েবল আছে সব কিন্তু BronoxCar ক্লাশটি পেয়ে গেছে। এবং BronoxCar ক্লাশে দেখো আমরা কিন্তু কোন কোডই লিখি নি। কিন্তু যখনই আমরা BronoxCar ক্লাশটির অবজেক্ট বানাবো দেখবো যে BasicCar ক্লাশের যত মেথড এবং ভেরিয়েবল ছিল সবই আমরা এ্যাকসেস করতে পারছি। চলো বিষয়টি পরীক্ষা করে দেখি।</p>
+                            <p>প্রথমেই AmraSobaiProgrammer ক্লাশের main মেথডের মধ্যে BronoxCar ক্লাশের একটি অবজেক্ট বানাই।</p>
+                            <br><img class="img" src="img/content_images/16_4_parent_class_child_class_inheritance_3.png"><br><br>
+                            <p>আমরা তো দেখেছিলাম যে কোন একটি ক্লাশের অবজেক্ট বানানোর পর সেই ক্লাশের কোন মেথড বা ভেরিয়েবলে এ্যাকসেস পেতে গেলে অবজেক্টের নামের পরে একটা ডট(.) ব্যবহার করে তারপর মেথড বা ভেরিয়েবলের নামটি লিখতে হয় তাই না?</p>
+                            <ul>
+                                <li>
+                                    <p>তাহলে আমরা এখন BronoxCar ক্লাশের একটি অবজেক্ট বানিয়েছি</p>
+                                </li>
+                                <li>
+                                    <p>এবং বলেছি যে যেহেতু এটি BasicCar ক্লাশের চাইল্ড(BasicCar ক্লাশকে BronoxCar ক্লাশে Extend করা হয়েছে)</p>
+                                </li>
+                                <li>
+                                    <p>সুতরাং BronoxCar ক্লাশের কোন অবজেক্ট BasicCar ক্লাশের যে কোন ভেরিয়েবল বা মেথডকে পেয়ে যাবে।</p>
+                                </li>
+                                <li>
+                                    <p>তাহলে তো BronoxCarObject1 এর পরে ডট(.) দিয়ে BasicCar ক্লাশের যে কোন মেথড বা ভেরিয়েবলকে পাবার কথা তাই না?</p>
+                                </li>
+                            </ul>
+                            <p>এসো দেখি:</p>
+                            <br><img class="img" src="img/content_images/16_4_parent_class_child_class_inheritance_4.png"><br><br>
+                            <p>এবং আউটপুটটা দেখো:</p>
+                            <br><img class="img" src="img/content_images/16_4_parent_class_child_class_inheritance_5.png"><br><br>
+                            <p>এখানে তীর চিহ্ন দিয়ে দেখানো যতগুলো মেথড এবং ভেরিয়েবল আমরা BronoxCar ক্লাশের অবজেক্ট থেকে কল করেছি সবগুলোই কিন্তু BasicCar ক্লাশের মেথড এবং ভেরিয়েবল। এবং আমাদের BronoxCar ক্লাশে কিন্তু কোন কোডই এ পর্যন্ত লেখা হয় নি। সুতরাং BasicCar ক্লাশকে BronoxCar ক্লাশে শুধু Extend করার কারণে BasicCar ক্লাশের সব ভেরিয়েবল এবং মেথড BronoxCar ক্লাশটি পেয়ে গেছে।</p>
+                            <p>আর খুব সিম্পলি এটিই হচ্ছে OOP তে ইনহেরিট্যান্স(Inheritance)।</p>
+                            <p>খেয়াল করে দেখো আমরা আগে বলেছিলাম যে, কার ডিজাইনারের কাছে যদি বেসিক কারের একটা ডিজাইন করা থাকে এবং পরবর্তীতে নতুন ডিজাইনের কার তৈরী করার দরকার হয়, তাহলে সে নিচের তিনটি কাজ করতে পারে:</p>
+                            <p align="justify">১. ওই বেসিক ফিচারগুলো নিয়েই একটা কার বানিয়ে ফেলা যেতে পারে।</p>
+                            <p align="justify">২. নতুন আরো ফিচার বা ফাংশনালিটি(কিছু করার ক্ষমতা) যোগ করতে পারে। যেমন: কার এ সিডি প্লেয়ার থাকবে, ব্যাক ক্যামেরা থাকবে, এয়ার ব্যাগ থাকবে, রেডিও থাকবে, এসি থাকবে, জাম্প করতে পারবে ইত্যাদি।</p>
+                            <p align="justify">৩. কমন ফিচারগুলোতে নতুন ফ্যাসিলিটি যোগ করতে পারে। যেমন: চাকা আরো শক্তিশালী করলো(চাকাতে নতুন ফ্যাসিলিটি যোগ করলো), সিটের ডিজাইন আরো সুন্দর করলো(সিটে নতুন ফ্যাসিলিটি যোগ করলো), অনাকাঙ্খিতভাবে কোন কিছু কারের সামনে এলে কারটি হার্ড ব্রেক করবে(ব্রেক এ নতুন ফ্যাসিলিটি যোগ করলো), কারের সর্বোচ্চ গতি বাড়িয়ে দিলো(কারের চলতে পারার ক্ষমতাতে নতুন ফ্যাসিলিটি যোগ করলো), হুইসেলের সাউন্ডটা আরো নমনীয় করলো যাতে কানে সহনীয় হয়(হুইসেল দেবার ক্ষমতাতে নতুন ফ্যাসিলিটি যোগ করলো)</p>
+                            <p>১. নাম্বার তো আমরা ইতোমধ্যেই করে ফেললাম BasicCar কে Extend করে BronoxCar বানালাম যার সব বৈশিষ্ট্য বেসিক কারের মতই।</p>
+                            <p>এখন আমাদের ডিজাইনের প্রয়োজন নতুন কিছু ফিচার যোগ করা। (নাম্বার ২)</p>
+                            <p>তাহলে আমরা সেই ফিচারগুলো যোগ করে ফেলি BronoxCar ক্লাশে।</p>
+                            <p>কার এ সিডি প্লেয়ার থাকবে, ব্যাক ক্যামেরা থাকবে, এয়ার ব্যাগ থাকবে, রেডিও থাকবে, এসি থাকবে।</p>
+                            <br><img class="img" src="img/content_images/16_4_parent_class_child_class_inheritance_6.png"><br><br>
+                            <p>এছাড়াও নতুন কারটি জাম্প করতে পারবে, এটা তো ফাংশনালিটি বা কিছু করার ক্ষমতা তাই আমাদের একটি মেথড বানাতে হবে।</p>
+                            <br><img class="img" src="img/content_images/16_4_parent_class_child_class_inheritance_7.png"><br><br>
+                            <p><br /><br /></p>
+                            <p>এখন আমাদের BronoxCar ক্লাশে BasicCar ক্লাশের সব মেথড এবং ভেরিয়েবল আছে এবং এখন যা যোগ করলাম সেগুলোও আছে।</p>
+                            <p>এখন আমাদের ডিজাইনের প্রয়োজন কমন ফিচারগুলোতে নতুন ফ্যাসিলিটি যোগ করা। (নাম্বার ৩)</p>
+                            <p>চাকা আরো শক্তিশালী করা(চাকাতে নতুন ফ্যাসিলিটি যোগ করা), সিটের ডিজাইন আরো সুন্দর করা(সিটে নতুন ফ্যাসিলিটি যোগ করা)</p>
+                            <p>এই দুটোর জন্য আমাদের wheel এরব seat দুটি ভেরিয়েবল এর মান নতুন করে এ্যাসাইন করতে হবে BronoxCar ক্লাশে।</p>
+                            <br><img class="img" src="img/content_images/16_4_parent_class_child_class_inheritance_8.png"><br><br>
+                            <p>এরপর আরো কিছু ব্যাপার ছিলো। যেমন: অনাকাঙ্খিতভাবে কোন কিছু কারের সামনে এলে কারটি হার্ড ব্রেক করবে(ব্রেক এ নতুন ফ্যাসিলিটি যোগ করা), কারের সর্বোচ্চ গতি বাড়িয়ে দিলো(কারের চলতে পারার ক্ষমতাতে নতুন ফ্যাসিলিটি যোগ করা), হুইসেলের সাউন্ডটা আরো নমনীয় করলো যাতে কানে সহনীয় হয়(হুইসেল দেবার ক্ষমতাতে নতুন ফ্যাসিলিটি যোগ করা)</p>
+                            <p>BasicCar এ breakCar, runCar এবং whistle নামে তিনটি মেথড আগে থেকেই আছে। যেগুলো ইনহেরিটেন্স ফিচারের বদৌলতে এখন BronoxCar ক্লাশেও আছে। এখন আমাদের দরকার আসলে তিনটি ফ্যাসিলিটি যোগ করার জন্য ওই তিনটি মেথড মডিফাই করা।</p>
+                            <p>আর এটা করার জন্য আমাদের মেথড ওভাররাইডিং(Method Overriding) বুঝতে হবে। মেথড ওভাররাইডিং আমরা পরবর্তী পলিমরফিজম(Ploymorphism) চ্যাপ্টারেই আলোচনা করবো।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <!-- <script type="text/javascript" src="cordova.js"></script>  -->
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+    </style> 
+</head>
+
+<body style="background-color: #6f9f57;">  
+    <div id="logo_and_slogan">
+      <p class="slogan" id="logo"><img src="img/logo.png" alt="Logo" style="height: 30%; width: 30%;"></p>
+      <h3 class="slogan" style="font-size: 24px;">নতুনদের জন্য জাভা</h3> 
+      <h3 class="slogan">নাজমুল হাসান নিরো</h3>
+
+      <a class="btn btn-default" style="font-family: solaimanlipi;" href="home.html">প্রবেশ করুন</a>
+    </div>  
+</body>
+
+<script type="text/javascript">
+function onDeviceReady() {
+    document.removeEventListener('deviceready', onDeviceReady, false);
+
+    // Set AdMobAds options:
+    admob.setOptions({
+        publisherId:          "ca-app-pub-1095257503027592~8721109341",  // Required
+        interstitialAdId:     "ca-app-pub-XXXXXXXXXXXXXXXX/IIIIIIIIII",  // Optional
+        tappxIdiOS:           "/XXXXXXXXX/Pub-XXXX-iOS-IIII",            // Optional
+        tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
+        tappxShare:           0.5                                        // Optional
+    });
+}
+
+document.addEventListener("deviceready", onDeviceReady, false);
+    jQuery(document).ready(function($) {   
+        /*$("#logo").animate({bottom: 50%});*/
+        //setTimeout(function(){ window.location.href = 'home.html'; }, 3000);
+    });
+</script>
+
+</html>

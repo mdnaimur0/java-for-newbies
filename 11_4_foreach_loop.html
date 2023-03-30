@@ -1,0 +1,177 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+            border: 1px solid;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+        td, th {
+            padding: 4px 10px;
+            border: 1px solid;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">Foreach Loop</h4>
+                            <br>
+                            <p>এটি আবার খুব গুরুত্বপূর্ণ। আমরা এ্যারে(Array) চ্যাপ্টারে বলেছিলাম মাত্র 3 লাইন কোড লিখেই একটা এ্যারের সব ডাটা আমরা দেখতে পারি মনে আছে?</p>
+                            <p>Foreach Loop টা সেই কাজের জন্য ব্যবহৃত হয়। একটা এ্যারের মধ্যেকার সব ডাটা নিয়ে কাজ করার জন্য।</p>
+                            <p>চলো আমরা দেখি।</p>
+                            <br><img class="img" src="img/content_images/11_4_foreach_loop_1.png"><br><br>
+                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/11_4_foreach_loop_2.png"><br><br>
+                            <p>বিষয়টা খুব সহজ। কিছুটা For Loop এর মতোই।</p>
+                            <br><img class="img" src="img/content_images/11_4_foreach_loop_3.png"><br><br>
+                            <p>প্রথমে একটা এ্যারে বানিয়ে নেবে। এরপর Foreach এর সিনট্যাক্সটা এরকম।</p>
+                            <p>for(data_type variable : array/ collection){</p>
+                            <p>//statement</p>
+                            <p>}</p>
+                            <p>অর্থাৎ a তে ডাটা টাইপটা দিতে হবে। এ্যারেটি যে ডাটা টাইপের সেটাই দিতে হবে। b তে একটা ভেরিয়েবল নাম দিতে হবে। এখানে তুমি তোমার ইচ্ছা মতো যে কোন নামই দিতে পারো। তারপর একটা কোলন(:) এরপর এ্যারেটির নাম দেবে c তে। আর b তে যে ভেরিয়েবলের যে নাম দিয়েছিলে সেটাই তোমাকে d তে দিতে হবে।</p>
+                            <p>ব্যস সিম্পল।</p>
+                            <p>এবার তো আমরা String ডাটা টাইপ দিয়ে দেখলাম চলো এবার int ডাটা টাইপ দিয়ে একটা দেখি।</p>
+                            <br><img class="img" src="img/content_images/11_4_foreach_loop_4.png"><br><br>
+                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/11_4_foreach_loop_5.png"><br><br>
+                            <p>এখন আরেকটি কাজ করি। এ্যারেটিতে যতগুলো নাম্বার আছে সবগুলোর যোগফল বের করি।</p>
+                            <br><img class="img" src="img/content_images/11_4_foreach_loop_6.png"><br><br>
+                            <p>আউটপুট দেখো।</p>
+                            <br><img class="img" src="img/content_images/11_4_foreach_loop_7.png"><br><br>
+                            <p>খুব মজার তাই না?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

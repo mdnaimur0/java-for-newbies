@@ -1,0 +1,171 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">ভেরিয়েবলকে প্রোগ্রামে ব্যবহার করা</h4><br>
+                            <br>
+                            <p>আমরা এতক্ষণ পর্যন্ত দেখলাম ভেরিয়েবল এ কিভাবে ডাটা রাখতে হয়। এবার চলো আমরা দেখি কিভাবে ভেরিয়েবল এর ডাটা প্রোগ্রামে ব্যবহার করা যায়।</p>
+                            <p>নিচের প্রোগ্রামটি দেখো:</p>
+                            <br><img class="img" src="img/content_images/6_4_variable_programme_bebohar_kora_1.png"><br><br>                            <p>প্রথমটি দেখো:</p>
+                            <p>প্রোগ্রামটি Run করলে দেখবে স্ক্রীণে Pragga Mashiat লেখাটি ফুটে উঠেছে।</p>
+                            <br><img class="img" src="img/content_images/6_4_variable_programme_bebohar_kora_2.png"><br><br>                            <p>প্রথমটি দেখো:</p>
+                            <p>আমরা Java তে প্রথম প্রোগ্রামটি যখন Run করি তখন দেখেছিলাম যে System.out.println(); এই লাইনটির Round Bracket বা () এর মধ্যে কোন লেখাকে ডাবল কোটেশন এর মধ্যে লিখে দিলেই প্রোগ্রামের আউটপুটে সেই লেখাটি দেখায়। যেমন: System.out.println(&ldquo;Pragga Mashiat&rdquo;);</p>
+                            <p align="justify">কিন্তু Round Bracket এর মধ্যে শুধু কোন ষ্ট্রিং না, আমরা ভেরিয়েবলকেও ব্যবহার করতে পারি। যেটা আমরা উপরের উদাহরণে দেখলাম। এক্ষেত্রে পার্থক্য শুধু একটাই, ভেরিয়েবল ব্যবহার করলে ভেরিয়েবল এর নামের দুই পাশে ডাবল কোটেশন ব্যবহার করতে হবে না।</p>
+                            <p align="justify">একইভাবে চলো আমরা অন্যান্য ভেরিয়েবলগুলোও প্রিন্ট করে দেখি।</p>
+                            <br><img class="img" src="img/content_images/6_4_variable_programme_bebohar_kora_3.png"><br><br>                            <p>প্রথমটি দেখো:</p>
+                            <p>এই প্রোগ্রামটি রান করলে নিচের মতো আউটপুট দেখাবে:</p>
+                            <br><img class="img" src="img/content_images/6_4_variable_programme_bebohar_kora_4.png"><br><br>                            <p>প্রথমটি দেখো:</p>
+                            <p><br /><br /></p>
+                            <p>এক্ষেত্রে একটা প্রশ্ন তোমার মনে জাগতে পারে। কেন আমরা কোন একটি ডাটা ভেরিয়েবল এর মধ্যে রাখবো। যেমন প্রথম উদাহরণে System.out.println(name); এরকম না করে আমরা তো সরাসরি System.out.println(&ldquo;Pragga Mashiat&rdquo;); ই লিখতে পারি।</p>
+                            <p>ভেরিয়েবল এর মধ্যে ডাটা রাখার উদ্দেশ্য হলো সেটা যেন আমরা প্রোগ্রামে বারবার ব্যবহার করতে পারি। তুমি যদি System.out.println(&ldquo;Pragga Mashiat&rdquo;); এরকম লিখো তাহলে প্রোগ্রামের অন্য কোথাও যদি তোমার এই নামটির দরকার হয় তাহলে তোমাকে আবার পুরো নামটিই লিখতে হবে। কিন্তু যদি নামটি একটা ভেরিয়েবল এর মধ্যে রেখে দাও তাহলে প্রোগ্রামে যত জায়গায় তোমার নামটি প্রয়োজন হবে তুমি শুধু name ভেরিয়েবলটি ব্যবহার করলেই নামটি পেয়ে যাবে। চলো আরো একটি উদাহরণ দেখি:</p>
+                            <p>ধরো তোমাকে Antonius Johannes van den Broek (4 May 1870, Zoetermeer, 25 October 1926, Bilthoven) was a Dutch amateur physicist notable for being the first who realized that the number of an element in the periodic table (now called atomic number) corresponds to the charge of its atomic nucleus. This hypothesis was published in 1911 and inspired the experimental work of Henry Moseley, who found good experimental evidence for it by 1913. এরকম বড় একটি লেখা প্রোগ্রামের বিভিন্ন জায়গায় বারবার ব্যবহার করতে হবে। তখন কি করবে? প্রত্যেকবার এত বড় লেখাটি লিখবে?</p>
+                            <p>না!</p>
+                            <p>লেখাটিকে একটি ভেরিয়েবল যেমন antoniusVanDenBroek এর মধ্যে রেখে দিতে হবে তারপর সেটাকে তুমি প্রোগ্রামে যখন খুশি তখন ব্যবহার করতে পারবে।</p>
+                            <p>ভেরিয়েবলে ডাটা রেখে প্রোগ্রামে সেটি ব্যবহার করার আরেকটি উদাহরণ দেখি চলো:</p>
+                            <br><img class="img" src="img/content_images/6_4_variable_programme_bebohar_kora_5.png"><br><br>                            <p>প্রথমটি দেখো:</p>
+                            <p>প্রোগ্রামটির আউটপুট দেখো:</p>
+                            <br><img class="img" src="img/content_images/6_4_variable_programme_bebohar_kora_6.png"><br><br>                            <p>প্রথমটি দেখো:</p>
+                            <p>প্রোগ্রামটিতে নতুন আরেকটি Operator দেখতে পাচ্ছো। Plus (+) এটি একটি ম্যাথমেটিক্যাল অপারেটর যেটির কাজ হলো দুটি ভ্যালু যোগ করা। এটিকে প্রোগ্রামিং এর ভাষায় + (Addition) অপারেটর বলে। আমরা পরে অপারেটর চ্যাপ্টারে আরো বিস্তারিত আলোচনা করবো।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

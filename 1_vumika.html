@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title para_heading">ভূমিকা</h4>
+                <p>কোন না কোনভাবে আমাদের প্রায় সবারই ধারনা প্রোগ্রামিং অনেক কঠিন একটা ব্যাপার। যেন তেন ব্রিলিয়ান্ট ছাড়া প্রোগ্রামিং করা সম্ভব না। আর তাই সফটওয়্যার ইঞ্জিনিয়ার কথাটা শুনলেই চোখ কপালে উঠে যায়।<br />
+                আমি প্রথমত এই ভুল ধারনাটা ভেঙ্গে ফেলতে চেয়েছি। প্রোগ্রামিং যে বিরাট কঠিন কিছু না এবং হাইস্কুল লেভেলের ছেলেমেয়েরাও প্রোগ্রামিং শুরু করতে পারে, আমি চেষ্টা করেছি সেটাই প্রমান করতে। হাইস্কুলের ছেলেমেয়েরা যদি অংক কষতে পারে তাহলে প্রোগ্রামিংও করতে পারবে অবশ্যই। চেষ্টা করেছি বিষয়টা প্রমান করতে।<br />
+                এবং প্রোগ্রামিং যে বিরাট কঠিন কিছু না, অন্য পেশার যে কোন মানুষ যে অন্তত ন্যুনতম ইংরেজী জানে এবং একটু আকটু কম্পিউটার ব্যবহার করতে পারে, তারাও প্রোগ্রামিং করতে পারবে অবশ্যই।<br />
+                আরেকটা ব্যাপার। সেটা ক্যারিয়ার নিয়ে। CSE তে পড়েও অনেককে জবের জন্য হন্যে হয়ে বেড়াতে হয়। শুধু স্কীলের অভাবে। একারণে আমি চেয়েছি আমাদের ছেলেমেয়েরা হাইস্কুলেই প্রোগ্রামিং এর জগতটাতে ঢুকে পড়ুক। এখন যদি খুব বেশি নাও পারে তবুও আমার মতে ছেলেমেয়েরা ছোটবেলাতেই যদি জগতটাতে অন্তত ঢুকে পড়তে পারে তাহলে ভবিষ্যৎ জীবনে তাদের জব নিয়ে অন্তত দুঃশ্চিন্তায় পড়তে হবে না। নিজের ক্যারিয়ারটা নিজেই গড়ে নিতে পারবে।<br />
+                এবং আরেকটি কথা। তোমরা আবার এটা ভেবে নিও না যে দুই লাইন শিখে ফেললেই তুমি প্রোগ্রামার হয়ে যাবে। প্রোগ্রামিং খুব সহজ একটি জিনিস কিন্তু তোমাকে সময় নিয়ে এটি শিখতে হবে। অল্প একটু শিখেই ছেড়ে দিলে চলবে না।<br />
+                সব কিছু্রই লেভেল আছে। প্রোগ্রামারেরও তেমন লেভেল আছে। প্রোগ্রামিং সম্পর্কে তোমাকে একটা গ্রহনযোগ্য নলেজ এবং কার্যপদ্ধতি দেখিয়ে দেওয়াই বইটার উদ্দেশ্য। তবে সে লেভেলটাও একেবারে ফেলনা না। বইটা শেষ করতে পারলে তুমি প্রোগ্রামিং প্রবলেম সলভ করা শিখবে, শক্ত একটা বেসিক তৈরী হবে যেটা তোমার পরবর্তী প্রোগ্রামিং ক্যারিয়ারে অনেক সহায়তা করবে। কিন্তু মনে রেখো এটা একটা লং জার্নি এবং এই বই শেষ করে তোমাকে থেমে থাকলে চলবে না। এর পরের ধাপের জন্য প্রস্তুতি নিতে হবে।<br />
+                আর সবচে&rsquo; বড় একটা কথা। Competition with no one! তুমি অবশ্যই অবশ্যই কারো দেখাদেখি প্রোগ্রামার হওয়ার চেষ্টা করবে না। তোমার বন্ধু এ্যাপ বানিয়ে ফেলেছে বা সফটওয়্যার বানিয়ে ফেলেছে, তোমাকেও বানাতে হবে, এটা কখনোই করার চেষ্টা করবে না। তুমি ফলো করবে তোমার প্যাশন। তুমি পড়া এবং প্র্যাকটিস করা শুরু করবে, যদি দেখো এখানে তোমার প্যাশন খুঁজে পাচ্ছো, তোমার আনন্দ খুঁজে পাচ্ছো তবেই তুমি কন্টিনিউ করবে। আর যদি সেটা খুঁজে না পাও তাহলে বইটা অন্য কোন বন্ধুকে দিয়ে দেবে এবং সেই কাজে মন দেবে যেটাতে তোমার প্যাশন। সেটা ক্রিকেট হোক আর ভূগোল বই হোক। তাহলে চলো শুরু করি। আমি তোমাদের সাথেই আছি!</p>
+
+              </div> 
+            </div> 
+        </div> 
+      </div> 
+    </div>  
+    <!-- Inner Content End   --> 
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>

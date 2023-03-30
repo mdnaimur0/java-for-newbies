@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"> 
+                            <h4 class="panel-title para_heading">ভেরিয়েবল(Variable) কি?</h4>
+                            <br>
+                            <p align="justify">তোমাকে একটি বালতি আর পানি দেয়া হলো এবং বলা হলো বালতিতে পানি রাখো। তাহলে বালতিটা কি হলো? একটি কনটেইনার না? যেটি পানি ধারণ করতে পারে। তেমনি প্রোগ্রামিং এ ভেরিয়েবলও হলো একটি কন্টেইনার যেটি ডাটা ধারন করে। বালতিতে যেমন তুমি পানি রাখতে পেরেছ তেমনি একটি ভেরিয়েবল এর মধ্যে তুমি ডাটা রাখতে পারবে।</p>
+                            <p align="justify">যেমন তোমার বয়স 15 এটি একটি ডাটা এবং এটি তুমি একটি ভেরিয়েবলের মধ্যে রেখে দিতে পারবে। প্রোগ্রামিং এর ক্ষেত্রে ভেরিয়েবলও খুব গুরুত্বপূর্ণ একটি জিনিস।</p>
+                            <p>এসো দেখি ভেরিয়েবল কেন এতো গুরুত্বপূর্ণ কম্পিউটার প্রোগ্রামিং এর ক্ষেত্রে।</p>
+                            <p align="justify">ধরো তোমাকে বলা হলো 4 আর 5 যোগ করে দিতে। তুমি ধুম করে বলে দিতে পারবে 9। কিন্তু যদি তোমাকে বলা হয় 81837485625677 এবং 3958792387492 যোগ করে দাও তো। তুমি তখন কিন্তু এটি আর মনে রাখতে পারবে না। তোমাকে দু&rsquo;টো নাম্বারই খাতায় লিখে রাখতে হবে।</p>
+                            <p align="justify">আসলে 4 এবং 5 যোগ করার সময়ও তুমি একই কাজ করেছিলে। দুইটা নাম্বারই তুমি তোমার ব্রেইনে রেখে দিয়েছিলে তারপর যোগ করে ফলাফল বের করে দিয়েছিলে। এবার মনে রাখতে পারছো না জন্য খাতার সাহায্য নিচ্ছো। আসলে প্রতিটি ক্ষেত্রেই তুমি ডাটা দু&rsquo;টো কোথাও না কোথাও রেখে দিচ্ছো এবং শেষে যোগ করে দিচ্ছো।</p>
+                            <p align="justify">কম্পিউটার প্রোগ্রামও একই কাজ করে। সেটা করে ভেরিয়েবল এর মাধ্যমে। যখনই তুমি তাকে একটি ডাটা দাও সেই ডাটাকে তার কোথাও না কোথাও রেখে দিতে হবে। সেই রেখে দেওয়ার জায়গাটাই হলো ভেরিয়েবল।</p>
+                            <p align="justify">আগে আমরা ক্যালকুলেটরের মাধ্যমে 4 এবং 5 যোগ করার একটা উদাহরণ দেখেছিলাম। সেই একই কাজ করার জন্য আমরা একটি কম্পিউটার প্রোগ্রাম বানানোর কথাও বলেছিলাম।</p>
+                            <p align="justify">এরকম একটি প্রোগ্রাম যদি তুমি বানাতে চাও যেটি 4 এবং 5 যোগ করবে তাহলে এই দুটি ডাটাই তোমাকে দু&rsquo;টি ভেরিয়েবল এর মধ্যে রাখতে হবে।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

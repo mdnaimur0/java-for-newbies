@@ -1,0 +1,406 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+            border: 1px solid;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+        td, th {
+            padding: 4px 10px;
+            border: 1px solid;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">Operator Precedence:</h4>
+                            <br>
+                            <p>ধরো তোমাকে একটা ছোট অংক কষতে দেয়া হলো এরকম: 12 + 4 X 8</p>
+                            <p>এটার রেজাল্ট তুমি অবশ্যই 128 বলবে না। এটার রেজাল্ট তো 44। কারণ তুমি জানো যে আগে গুণের কাজ হবে তারপর যোগের কাজ হবে।</p>
+                            <p>খুব সহজভাবে এটাই হচ্ছে Operator Precedence । অর্থাৎ অপারেটরের প্রাধান্য বা কম্পিউটার প্রোগ্রামে একাধিক অপারেটর ব্যবহার করা হলে কোন অপারেটরের কাজ আগে হবে আর কোনটার কাজ পরে হবে।</p>
+                            <p>একটা উদাহরণ দেখি:</p>
+                            <br><img class="img" src="img/content_images/9_9_operator_precedence_1.png"><br><br>                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/9_9_operator_precedence_2.png"><br><br>                            <p>আউটপুট:</p>
+                            <p>এখানে আগে * অপারেটরের কাজ হয়েছে তারপর + অপারেটরের কাজ হয়েছে।</p>
+                            <p>এরকম প্রোগ্রামে কোন অপারেটরের কাজ আগে হবে আর কোনটার কাজ পরে হবে তা নিচে দেয়া হলো।</p>
+                            <table width="567" cellspacing="1" cellpadding="2"><colgroup><col width="87" /> <col width="75" /> <col width="228" /> <col width="155" /> </colgroup>
+                                <tbody>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center"><strong>Precedence</strong></p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center"><strong>Operator</strong></p>
+                                    </td>
+                                    <td width="228">
+                                        <p align="center"><strong>Type</strong></p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center"><strong>Associativity</strong></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">15</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">()<br />[]<br />&middot;</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Parentheses<br />Array subscript<br />Member selection</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">বাম থেকে ডানে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">14</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">++<br />--</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Unary post-increment<br />Unary post-decrement</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">ডান থেকে বামে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">13</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">++<br />--<br />+<br />-<br />!<br />~<br />( <em>type</em> )</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Unary pre-increment<br />Unary pre-decrement<br />Unary plus<br />Unary minus<br />Unary logical negation<br />Unary bitwise complement<br />Unary type cast</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">ডান থেকে বামে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">12</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">* <br />/ <br />%</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Multiplication<br />Division<br />Modulus</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">বাম থেকে ডানে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">11</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">+<br />-</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Addition<br />Subtraction</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">বাম থেকে ডানে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">10</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">&lt;&lt;<br />&gt;&gt;<br />&gt;&gt;&gt;</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Bitwise left shift<br />Bitwise right shift with sign extension<br />Bitwise right shift with zero extension</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">বাম থেকে ডানে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">9</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">&lt;<br />&lt;=<br />&gt;<br />&gt;=<br />instanceof</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Relational less than<br />Relational less than or equal<br />Relational greater than<br />Relational greater than or equal<br />Type comparison (objects only)</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">বাম থেকে ডানে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">8</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">==<br />!=</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Relational is equal to<br />Relational is not equal to</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">বাম থেকে ডানে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">7</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">&amp;</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Bitwise AND</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">বাম থেকে ডানে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">6</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">^</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Bitwise exclusive OR</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">বাম থেকে ডানে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">5</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">|</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Bitwise inclusive OR</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">বাম থেকে ডানে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">4</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">&amp;&amp;</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Logical AND</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">বাম থেকে ডানে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">3</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">||</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Logical OR</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">বাম থেকে ডানে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">2</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">? :</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Ternary conditional</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">ডান থেকে বামে</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="87">
+                                        <p align="center">1</p>
+                                    </td>
+                                    <td width="75">
+                                        <p align="center">=<br />+=<br />-=<br />*=<br />/=<br />%=</p>
+                                    </td>
+                                    <td width="228">
+                                        <p>Assignment<br />Addition assignment<br />Subtraction assignment<br />Multiplication assignment<br />Division assignment<br />Modulus assignment</p>
+                                    </td>
+                                    <td width="155">
+                                        <p align="center">ডান থেকে বামে</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p><br /><br /></p>
+                            <p>এখানে Precedence কলামে দেখো সর্ব উপরে আছে 15 আর সর্ব নিচে আছে 1. এখানে 15 এর প্রাধান্য সবচে&rsquo; বেশি এবং 1 এর প্রাধান্য সবচে&rsquo; কম।</p>
+                            <p>আর একদম ডান পাশের কলামে দেখো &ldquo;বাম থেকে ডানে&rdquo; বা &ldquo;ডান থেকে বামে&rdquo; লেখা আছে। এর অর্থ হলো কোন একটা কোডে যদি এই অপারেটর টাইপের সবগুলো অপারেটরই থাকে বা একাধিক অপারেটর থাকে তাহলে বাম থেকে ডানে বা ডান থেকে বামে প্রোগ্রাম কাজ করবে। যেমন ছোট একটা উদাহরণ দেখো:</p>
+                            <p>এটি 11 নাম্বার Precedence এর জন্য</p>
+                            <br><img class="img" src="img/content_images/9_9_operator_precedence_3.png"><br><br>                            <p>আউটপুট:</p>
+                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/9_9_operator_precedence_4.png"><br><br>                            <p>আউটপুট:</p>
+                            <p>এখানে প্রোগ্রাম প্রথমে 12 থেকে 4 বিয়োগ করেছে তারপর ফলাফলের সাথে 9 যোগ করেছে। তার অর্থ হলো এখানে &ndash; এবং + দুইটি অপারেটর ব্যবহৃত হয়েছে। যেগুলো একই Precedence এর। এবং Associativity তে বলা আছে বাম থেকে ডানে প্রোগ্রাম কাজ করবে। সুতরাং 12 থেকে 4 বিয়োগ করেছে তারপর ফলাফলের সাথে 9 যোগ করেছে।</p>
+                            <p>এখন দেখো এই উদাহরণে ছোট্ট একটা পরিবর্তন করি।</p>
+                            <br><img class="img" src="img/content_images/9_9_operator_precedence_5.png"><br><br>                            <p>আউটপুট:</p>
+                            <p>4 এবং 9 কে আমরা একটা Parentheses এর মধ্যে নিয়েছি।</p>
+                            <p>এবং আউটপুট দেখো:</p>
+                            <br><img class="img" src="img/content_images/9_9_operator_precedence_6.png"><br><br>                            <p>আউটপুট:</p>
+                            <p>কেন এমন হলো?</p>
+                            <p align="justify">দেখো Parentheses এর Precedence হচ্ছে 15 অর্থাৎ এর প্রাধান্য সবার চেয়ে বেশি। যার কারণেই প্রোগ্রাম প্রথমে Parentheses এর কাজ করেছে অর্থাৎ 4 এবং 9 কে যোগ করেছে তারপর ফলাফল থেকে 12 কে বিয়োগ করে আউটপুট এসেছে -1।</p>
+                            <p align="justify">Precedence টেবিলে বেশি কিছু অপারেটর দেখছো তোমার অপরিচিত। চিন্তিত হবার কিছু নেই। ওই অপারেটরগুলো নিয়ে আমরা আলোচনা করি নি কারণ সেগুলো খুব কম সময়ই তোমাদের কাজের ক্ষেত্রে লাগবে। আর অনেক পরে হয়তো যখন লাগবে তখন তোমরা এমনিতেই শিখে নিতে পারবে আমার বিশ্বাস।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">মেথডের প্যারামিটার(Parameter)</h4>
+                            <br>
+                            <p align="justify">আমরা একটা মেথড বানিয়েছিলাম মনে আছে? যেটা 12 এবং 19 যোগ করে দেয়। ভালো কথা 12 এবং 19 যোগ করা যেহেতু সহজ জিনিস সেহেতু আমরা কঠিন একটা যোগ প্রোগ্রামকে দিয়ে করিয়ে নিই তাহলে। হতে পারে সেটা 7298347 এবং 8222234 এই দুটো সংখ্যাকে যোগ করে দেবে। তাহলে চলো দেখি।</p>
+                            <p>মেথড:</p>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_1.png"><br><br>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_2.png"><br><br>
+                            <p><br /><br /></p>
+                            <p>রেজাল্ট:</p>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_3.png"><br><br>
+                            <p align="justify">এখন দেখো তোমার যদি আরো দুটো সংখ্যা যোগ করতে হয় যেমন 43482798444 এবং 988934872232 তাহলে আরো একটা মেথড তৈরী করতে হবে। এরকম আরো দুটো সংখ্যার ক্ষেত্রে আরো একটা মেথড। ব্যাপারটা কঠিন হয়ে যাচ্ছে তাই না?</p>
+                            <p align="justify">এর একটা সহজ সমাধান আছে। মেথডে প্যারামিটার(Parameter) ব্যবহার করা। প্যারামিটার হলো এক বা একাধিক ভেরিয়েবল বা এ্যারে(Array) যা কোন মেথড তার নামের পরে () এই Round Bracket এর মধ্যে গ্রহন করে থাকে। কোন মেথডে প্যারামিটার ব্যবহার করলে সেটার যোগফল বের করার ক্ষমতা হয়ে যাবে আনলিমিটেড। যখন তুমি মেথডটি কল করবে তখন যে দুটো সংখ্যার যোগফল বের করতে চাও সে দুটো সংখ্যাকে প্যারামিটার হিসেবে শুধু পাঠিয়ে দিলেই হলো।</p>
+                            <p>চলো আমরা প্যারামিটার সহ একটা মেথড তৈরী করে দেখি।</p>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_4.png"><br><br>
+                            <p align="justify">মেথডের নাম অর্থাৎ sumOfTwoNumbers এর পরে () এই Round Bracket এর মধ্যে তুমি যে কোন প্যারামিটার বলে দিতে পারো। সেক্ষেত্রে ডাটা টাইপ এবং ভেরিয়েবল এর নাম বলে দিতে হবে এবং প্যারামিটার একাধিক হলে প্রত্যেকটা প্যারামিটার এর পরে কমা হবে।</p>
+                            <p>এখন এই মেথডকে আমরা কল করবো।</p>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_5.png"><br><br>
+                            <p>এখানে লক্ষ্য করো যে আমরা যে দুটো সংখ্যার যোগফল বের করতে চাই মেথডটি কল করার সময় শুধু সে দুটো সংখ্যা কমা দিয়ে লিখে দিলেই হলো। এখন আমাদের মেথডটি আর শুধু নির্দিষ্ট কোন সংখ্যাকে যোগ করবে না। মেথড কল করার সময় যেকোন দুটো সংখ্যাকে প্যারামিটার হিসেবে দিয়ে দিলে মেথডটি সেই দুটোরই যোগফল বের করে দেবে।</p>
+                            <p>আউটপুটটি দেখো:</p>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_6.png"><br><br>
+                            <p>এবার আমরা 758457483 এবং 234872346 কে প্যারামিটার হিসেবে দিয়ে দেখি।</p>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_7.png"><br><br>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_8.png"><br><br>
+                            <p>এবার চলো আমরা যে কোন সংখ্যার বর্গ (Square) বের করার জন্য একটা প্রোগ্রাম লিখি।</p>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_9.png"><br><br>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_10.png"><br><br>
+                            <p>এবার আমরা GPA বের করার জন্য একটা মেথড তৈরী করে দেখি।</p>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_11.png"><br><br>
+                            <p>এবার আমরা মেথডটি কল করে দেখি।</p>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_12.png"><br><br>
+                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/7_7_methoder_parameter_13.png"><br><br>
+                            <p><br /><br /></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

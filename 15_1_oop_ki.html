@@ -1,0 +1,260 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+            border: 1px solid;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+        td, th {
+            padding: 4px 10px;
+            border: 1px solid;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং(Object Oriented Programming) কি?</h4>
+                            <p>অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং(Object Oriented Programming) বা OOP খুবই গুরুত্বপূর্ণ একটা বিষয় প্রোগ্রামিং এর ক্ষেত্রে।</p>
+
+                            <p>আমরা OOP বুঝবো, তবে তার আগে চলো ছোট্ট একটা গল্প শুনি। গল্পটা হয়তো তোমরা আগে থেকেই শুনে থাকতে পারো অনেকে।</p>
+
+                            <p>এক রাজার পর্ষদ বর্গের মাঝে মন্ত্রী এবং পন্ডিত উভয়ই আছেন। মন্ত্রী সমস্ত রাজ্যের দেখভাল করেন। নিরাপত্তা, শান্তি-শৃঙ্খলা, নিয়ম কানুন অনুযায়ী পরিচালনা করা সবই উনিই দেখাশুনা করতেন।</p>
+
+                            <p>কিন্তু রাজা পন্ডিতকে বেতন দেন মন্ত্রীর চাইতেই বেশি। আর এ নিয়ে মন্ত্রী খুবই ক্ষিপ্ত। সে একদিন রাজার কাছে গিয়ে নালিশ করে বসলো। রাজামশাই আমি এতো এতো দায়িত্ব পালন করি অথচ আপনি পন্ডিতকে বেতন দেন আমার চাইতেও বেশি, যে কিনা সারা দিন বসে বসে শুধু বই পড়ে।</p>
+
+                            <p>তখন রাজা বললেন ঠিক আছে, কেন আমি পন্ডিতকে তোমার চেয়ে বেশি বেতন দিই তা প্রমান করে দিচ্ছি। রাজ বাড়ির সদর দরজার সামনে পোষা কুকুরটা বাচ্চা দিয়েছে, দেখে এসো তো।</p>
+
+                            <p>মন্ত্রী দেখে এলো।</p>
+
+                            <p>রাজা জিজ্ঞেস করলেন, দেখে এসেছ?</p>
+
+                            <p>মন্ত্রী বললো হ্যাঁ।</p>
+
+                            <p>কয়টা বাচ্চা দিয়েছে কুকুরটা?</p>
+
+                            <p>তা তো গুণে দেখি নাই হুজুর। দাঁড়ান আমি গুণে আসি। গুণে এসে বললো, পাঁচটা।</p>
+
+                            <p>আচ্ছা। কয়টা বাচ্চা সাদা, কয়টা বাচ্চা কালো?</p>
+
+                            <p>আবার মন্ত্রী দৌড় মারলো এবং এসে বললো দুইটা কালো, তিনটা সাদা।</p>
+
+                            <p>ছেলে কয়টা মেয়ে কয়টা?</p>
+
+                            <p>আবার মন্ত্রী দৌড়ুলো এবং ঘুরে এসে বললো, তিনটা ছেলে দুইটা মেয়ে।</p>
+
+                            <p>এবার রাজা মন্ত্রীর সামনেই পন্ডিতকে ডাকলেন এবং একই কথা বললেন, রাজ বাড়ির সদর দরজার সামনে পোষা কুকুরটা বাচ্চা দিয়েছে, দেখে এসো তো।</p>
+
+                            <p>পন্ডিত ঘুরে এলে রাজা জিজ্ঞেস করলেন, কয়টা বাচ্চা দিয়েছে কুকুরটা?</p>
+
+                            <p>পন্ডিত বললো, হুজুর পাঁচটা।</p>
+
+                            <p>কয়টা বাচ্চা সাদা, কয়টা বাচ্চা কালো?</p>
+
+                            <p>হুজুর দুইটা কালো, তিনটা সাদা।</p>
+
+                            <p>ছেলে কয়টা মেয়ে কয়টা?</p>
+
+                            <p>হুজুর তিনটা ছেলে দুইটা মেয়ে।</p>
+
+                            <p>মন্ত্রীর কি অবস্থা বুঝতেই পারছো।</p>
+
+                            <p>এখানে দেখো মন্ত্রী এবং পন্ডিত দুই জনই কিন্তু একই কাজ করেছে। কিন্তু তাদের কাজের ধরন এবং দক্ষতার মধ্যে অনেক তফাৎ।</p>
+
+                            <p>প্রোগ্রামিং করার জন্য প্রসিডিউরাল প্রোগ্রামিং(Procedural Programming) এবং অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং(Object Oriented Programming) আসলে দুটো আলাদা পদ্ধতি এবং এই দুই পদ্ধতির মধ্যে পার্থক্য মূলত এই ধরনেরই।</p>
+
+                            <p>অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং পদ্ধতি মূলত তোমাকে প্রোগ্রামে অনেকগুলো ফ্যাসিলিটি বা সুবিধা যোগ করবে যেগুলো প্রসিডিউরাল পদ্ধতি দিতে পারবে না।</p>
+
+                            <p>এখন আবার নতুন প্রশ্ন, তাহলে প্রসিডিউরাল প্রোগ্রামিং কি জিনিস।</p>
+
+                            <p>নিচের ছবিটা দেখো:</p>
+                            <br><img class="img" src="img/content_images/16_0_pic_1.png"><br>
+                            <img class="img" src="img/content_images/16_0_pic_2.png"><br><br><br>
+
+                            <p>দেখো উপরের ছবির কোডেও কিছু ভেরিয়েবল এবং কিছু মেথড আছে। নিচের ছবির কোডেও আছে। কিন্তু উপরের পাশের সমস্ত ভেরিয়েবল এবং মেথড একটা ক্লাশের মধ্যে আছে।</p>
+
+                            <p>প্রসিডিউরাল এবং অবজেক্ট ওরিয়েন্টেড এই দুই পদ্ধতির মধ্যে সবচে&rsquo; বেসিক এবং ভিজুয়াল পার্থক্য হলো প্রসিডিউরাল পদ্ধতিতে কোডগুলো ক্লাশের মধ্যে থাকে না। আর অবজেক্ট ওরিয়েন্টেড এ সমস্ত কোড একটি ক্লাশের মধ্যে থাকে।</p>
+
+                            <p>আমরা তো রাজা-গজার একটা গল্প শুনলাম। চলো এবার একটু বর্তমান যুগের একটা গল্প থেকে বুঝার চেষ্টা করি।</p>
+
+                            <p>ধরো তুমি একটি কার(Car) কোম্পানির মালিক। নিজেকে খুব ধনী মনে হচ্ছে তাই না?</p>
+
+                            <p>আচ্ছা ধরে নাও তুমি অনেক ধনী এবং একটি কার কোম্পানি আছে তোমার।</p>
+
+                            <p>তোমার কার কোম্পানিতে এক জন ডিজাইনার রেখে দিয়েছ যে প্রতিনিয়ত নতুন নতুন কারের ডিজাইন করে।</p>
+
+                            <p>কিন্তু ব্যাপারটা হলো সে যখন নতুন একটি কার ডিজাইন করবে তখন কি সেই কারটার সমস্ত কিছু নতুন করে ডিজাইন করবে? না। কেন নয় কারণ নতুন যে ডিজাইনের কারই ডিজাইন করুক না কেন সেটার তো বেসিক কিছু ফিচার এবং ফাংশনালিটি(কিছু করার ক্ষমতা) থাকতেই হবে।</p>
+
+                            <p>যেমন ফিচার: কারটির চাকা থাকবে, ড্যাসবোর্ড থাকবে, ষ্টিয়ারিং থাকবে, সিট থাকবে, মিরর থাকবে, বনেট থাকবে ইত্যাদি।</p>
+
+                            <p>যেমন ফাংশনালিটি: কারটি চলতে পারবে, ডানে বামে ঘুরতে পারবে, ব্রেক করতে পারবে, হুইসেল দিতে পারবে, ব্রেক করলে পেছনে লাইট জ্বালাতে পারবে ইত্যাদি। যখন তোমার ডিজাইনার নতুন একটি কার ডিজাইন করবে তখন তো এসব বেসিক ব্যাপারগুলো নতুন করে ডিজাইন করার দরকার নেই।</p>
+
+                            <p>সে যেটা করতে পারে:</p>
+
+                            <ol>
+                              <li>ওই বেসিক ফিচারগুলো নিয়েই একটা কার বানিয়ে ফেলা যেতে পারে।</li>
+                              <li>নতুন আরো ফিচার বা ফাংশনালিটি(কিছু করার ক্ষমতা) যোগ করতে পারে। যেমন: কার এ সিডি প্লেয়ার থাকবে, ব্যাক ক্যামেরা থাকবে, এয়ার ব্যাগ থাকবে, রেডিও থাকবে, এসি থাকবে, জাম্প করতে পারবে ইত্যাদি।</li>
+                              <li>কমন ফিচারগুলোতে নতুন ফ্যাসিলিটি যোগ করতে পারে। যেমন: চাকা আরো শক্তিশালী করলো(চাকাতে নতুন ফ্যাসিলিটি যোগ করলো), সিটের ডিজাইন আরো সুন্দর করলো(চাকাতে নতুন ফ্যাসিলিটি যোগ করলো), অনাকাঙ্খিতভাবে কোন কিছু কারের সামনে এলে কারটি হার্ড ব্রেক করবে(ব্রেক এ নতুন ফ্যাসিলিটি যোগ করলো), কারের সর্বোচ্চ গতি বাড়িয়ে দিলো(কারের চলতে পারার ক্ষমতাতে নতুন ফ্যাসিলিটি যোগ করলো), হুইসেলের সাউন্ডটা আরো নমনীয় করলো যাতে কানে সহনীয় হয়(হুইসেল দেবার ক্ষমতাতে নতুন ফ্যাসিলিটি যোগ করলো) তাহলে কাজ করার পদ্ধতিটা অনেক এফিসিয়েন্ট হলো তাই না? নতুন করে রি-ওয়ার্ক করতে হলো না মানে সব কিছু নতুন করে ডিজাইন করতে হলো না, অথচ তার যা উদ্দেশ্য ছিল সবই সফল হলো।</li>
+                            </ol>
+
+                            <p>অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং এ কাজের পদ্ধতি এরকমই।</p>
+
+                            <ol>
+                              <li>অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং পদ্ধতি কোড বা প্রোগ্রামকে এমনভাবে করার সুবিধা দেয় যাতে রি-ওয়ার্ক করতে হয় না। আগে কোন প্রোগ্রাম বানিয়েছ তা তোমাকে আবার বানাতে হবে না। সেটা পুনরায় ব্যবহার করা যায়।</li>
+                              <li>আগের প্রোগ্রামে নতুন কিছু যোগ করতে হলে খুব সহজেই যোগ করা যায় বা আগের প্রোগ্রামের কোন কিছুতে সহজেই নতুন ফিচার যোগ করা যায়।</li>
+                              <li>কোডগুলো খুব অর্গানাইজড হয়। যখন তুমি অনেক বড় বড় প্রোগ্রাম লিখবে তখন কোডগুলো ম্যানেজ করা অনেক সহজ হবে।</li>
+                              <li>কোডের নিরাপত্তা প্রদান করে। এছাড়া আরো অনেক সুবিধা দেয় যেগুলো আমরা উদাহরণ সহকারে দেখতে থাকলেই বুঝে ফেলবো। তেমন কঠিন কিছু না।</li>
+                            </ol>
+
+                            <p align="justify">আশা করি ইতোমধ্যে তোমরা মোটামুটি একটা ওভারভিউ পেয়েছ অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং এর ব্যাপারে। যেগুলো আমরা উপরে আলোচনা করলাম। এই পদ্ধিতিটি আসলে রিয়েল লাইফের সাথে সামঞ্জস্যপূর্ণ। অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং এমন একটি পদ্ধতি যা প্রোগ্রামিং করার সময় নিচের ফ্যাসিলিটিগুলো প্রদান করে:</p>
+                            <ol>
+                                <li>
+                                    <p align="justify">Inheritance&nbsp;</p>
+                                </li>
+                                <li>
+                                    <p align="justify">Polymorphism</p>
+                                </li>
+                                <li>
+                                    <p align="justify">Encapsulation&nbsp;</p>
+                                </li>
+                                <li>
+                                    <p align="justify">Abstraction</p>
+                                </li>
+                            </ol>
+                            <p align="justify">চলো আমরা হাতে কলমে দেখি। উপরের ফ্যাসিলিটি গুলো পেতে হলে আমাদের বেশ কিছু কনসেপ্টের সাথে পরিচিত হতে হবে। অনেক সহজ ব্যাপার আমরা একটা একটা করে দেখলেই বুঝে ফেলবো।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

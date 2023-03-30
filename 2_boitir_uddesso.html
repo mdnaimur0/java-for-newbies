@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title para_heading">বইটির উদ্দেশ্য</h4>
+                <p class="panel-title para_body"> 
+                  <p>এখন তো আইটি/সফটওয়্যার/প্রোগ্রামিং অনেক পরিচিত শব্দ। তোমরাও তো টিভি দেখো, পত্রিকা পড়ো। অনেকেই হয়তো কম্পিউটার প্রোগ্রামিং কথাটা শুনে থাকবে। অনেকের হয়তো বড় ভাই/বোন বা আংকেল আছেই যারা প্রোগ্রামার বা সফটওয়্যার ইঞ্জিনিয়ার। তাদের কাছ থেকেও শুনে থাকতে পারো।<br />
+                  কিন্তু যারা কম্পিউটার প্রোগ্রামিং কথাটা আগেই শুনেছ এবং হয়তোবা জেনেছ যে খুব কঠিন একটি বিষয় এটি তারা হয়তো আঁতকে উঠেছ ইতোমধ্যে তাদের আগেই বলছি, আঁতকে ওঠার কিছু নেই। তুমি যতটা কঠিন ভাবছো ঠিক ততটা কঠিন নয় বিষয়টি। একটু মনযোগ দিয়ে বইটি পড়তে শুরু করলেই বুঝতে পারবে। তুমি যদি বীজগণিতের অংক কষতে পারো তবে অবশ্যই অবশ্যই তুমি কম্পিউটার প্রোগ্রামিংও করতে পারবে, এতে কোন সন্দেহ নেই।<br />
+                  কিন্তু কথা হলো কেন আমরা কম্পিউটার প্রোগ্রামিং শিখবো আর কেনই বা সফটওয়্যার, গেইম এসব বানাতে শিখবো? চলো দেখি এসব শিখলে আমরা কি পাবো:</p>
+
+                  <ol>
+                    <li>প্রথমটা হলো প্যাশন। বিশ্বাস করো প্রোগ্রামিং এর জগৎটা আসলেই অনেক অনেক মজার একটা জগৎ। যে প্রোগ্রামিং এর মজাটা একবার অন্তত পেয়ে যাবে সে এর নেশাটা ছাড়তেই পারবে না। তুমি যখন কারো কোন গাইড ছাড়াই কোন একটা অংক কষে ফেলতে পারো তখনকার অনুভূতিটা কখনো খেয়াল করে দেখেছো? খেয়াল করলেই দেখবে এরকম সময় অসম্ভব রকমের আলাদা একটা তৃপ্তি আসে মনে। প্রোগ্রামিং শুরু করলেই বুঝবে অল্প কিছু কোড লিখেই তুমি একটা ক্যালকুলেটর বানিয়ে ফেলতে পারছো। যেটা যে কোন কিছু যোগ বিয়োগ করে দিতে পারছে। দেখবে তুমি প্রোগ্রামিং এর নেশায় পড়ে যাবে। খুব মজার একটা জায়গা এই প্রোগ্রামিং এর জগৎটা।</li>
+                    <li>আমাদের সময় আমরা কম্পিউটার মাউসটা ঠিকঠাক ধরতেই অনেক দিন সময় লেগে গিয়েছিলো। কিন্তু এখন তো ক্লাশ ফোর ফাইভে পড়া পিচ্চিরা দেখি ফটোশপে ফটো এডিট করে, ভিডিওতে এডিটিং করে বসে বসে। এসব কেন হয় জানো? সবটাই আসলে পরিচিতির ব্যাপার। ওরা যখন ছোট তখনই এইসব জিনিস তাদের আশেপাশে দেখে দেখে অভ্যস্ত হয়ে পড়ে। যার কারণে এসবের প্রতি আলাদা কোন ভীতিও কাজ করে না, আয়ত্বে আনতেও সময় লাগে না। আর আমরা ক্লাশ টেনে উঠে প্রথম কম্পিউটার স্পর্শ করার সুযোগ পাই, যে জিনিসটা আমরা কখনো দেখিই নি। যার কারণেই নতুন জিনিস আয়ত্বে আনতে সময় লেগে যেতো। সেরকমই তোমরা যদি খুব ছোটবেলা থেকেই কম্পিউটার প্রোগ্রামিং, এ্যাপ ডেভেলপমেন্ট, গেম ডেভেলপমেন্ট এসবের সাথে পরিচিত হতে পারো তাহলে এসবের উপর খুব সহজেই তোমরা পারদর্শী হতে পারবে যেটা তোমাদের ভবিষ্যৎ পেশা জীবনে কাজে লাগবে।</li>
+                    <li>জব মার্কেট। এখন তো পুরো বিশ্বে নাম্বার ওয়ান পেশা হচ্ছে প্রোগ্রামার বা সফটওয়্যার ইঞ্জিনিয়ার। তুমি যদি ছোটবেলা থেকেই এই পেশাটার সাথে ভালো মত পরিচিত হতে পারো আর গ্রাজুয়েশন শেষ করে জব মার্কেটে যাবার আগেই কিছু কিছু সফটওয়্যার, এ্যাপ বা গেম বানিয়ে ফেলতে পারো তবে বিশ্বাস করো জব মার্কেট তোমাকে কাছে টেনে নেবার জন্য অপেক্ষা করবে। জব মার্কেট সব সময়ই চায় পূর্ব অভিজ্ঞতা সম্পন্ন ক্যান্ডিডেটকে।</li>
+                  </ol>
+
+                  <p><br />
+                  সুতরাং একটা বার হলেও আমাদের শুরু করার চেষ্টা করা উচিৎ কি বল? কিন্তু আমি আবার বলে নিচ্ছি প্রোগ্রামিং খুব কঠিন কোন বিষয় কিন্তু নয়, তুমি যদি বীজগণিতের অংক কষতে পারো তাহলে অবশ্যই অবশ্যই তুমি প্রোগ্রামিংও করতে পারবে।</p>  
+                </p> 
+              </div> 
+            </div> 
+        </div> 
+      </div> 
+    </div>  
+    <!-- Inner Content End   --> 
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>

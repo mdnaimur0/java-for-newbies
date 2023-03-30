@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">ডাটা টাইপ (Data Type)</h4>
+                            <br>
+                            <p align="justify">আগের চ্যাপ্টারে আমরা দেখলাম যে Pragga Mashiat, 15, 4.85, YES সবগুলোই একটি ডাটা। কিন্তু খেয়াল করে দেখো যে সবগুলো ডাটা কিন্তু দেখতে এক রকম না। একেকটি ডাটা দেখতে একেক রকম। অর্থাৎ তাদের ধরনটা আলাদা। ডাটার এই ধরনটাই আসলে ডাটা টাইপ (Data Type)।</p>
+                            <p>এবং একটি কম্পিউটার প্রোগ্রাম এই আলাদা আলাদা ধরনের ডাটাগুলোকে আলাদা আলাদাভাবে চেনে।</p>
+                            <p>যেমন তুমি যদি কম্পিউটার প্রোগ্রামকে একটা ডাটা দাও Pragga Mashiat সেটা কম্পিউটার প্রোগ্রামের কাছে একটি ষ্ট্রিং(String) টাইপের ডাটা। <br />আবার আরেকটি ডাটা যদি দাও 15 তাহলে সেটা কম্পিউটার প্রোগ্রামের কাছে ইন্টিজার(Integer) টাইপের ডাটা।</p>
+                            <p>যেহেতু আমরা জাভা (Java) তে প্রোগ্রামিং শিখবো সুতরাং Java তে যেগুলো ডাটা টাইপগুলো ব্যবহৃত হয় সেগুলো সম্পর্কেই জানবো। <br />জাভাতে যে কয়টি ডাটা টাইপ ব্যবহৃত হয় সেগুলো তুমি ইতোমধ্যেই দেখে ফেলেছো। এখন এসো আমরা দেখি কোনটা কোন টাইপের ডাটা।</p>
+                            <p>Pragga Mashiat = এটি ষ্ট্রিং(String) টাইপের ডাটা। যে কোন ধরনের Sentence বা কয়েকটা Sentence এই ধরনের ডাটা টাইপের আওতায় পড়ে। এরকম আরো উদাহরন যেমন: Prachi Muniat, I am going to be a good programmer, My district is Bogra এগুলো সবই ষ্ট্রিং(String) টাইপের ডাটা। <br />Java এই ধরনের ডাটাকে String নামে চেনে। <em>খেয়াল রেখো এটি কিন্তু </em><em>string </em><em>না </em><em>String</em><em>।</em></p>
+                            <p>15 = এটি ইন্টিজার(Integer) টাইপের ডাটা। সকল পূর্ণ সংখ্যাই ইন্টিজার(Integer) টাইপের ডাটা। যেমন: 24, 58, 99922, 3746 সবই ইন্টিজার(Integer)। <br />Java এই ধরনের ডাটাকে int নামে চেনে।</p>
+                            <p>4.85 = এটি ফ্লোট(Float) টাইপের ডাটা। আগেরটি ছিল Integer যার মধ্যে পড়ে পূর্ণ সংখ্যাগুলো। আর দশমিক বা পয়েন্ট যুক্ত সংখ্যাগুলোকে বলে Float টাইপের ডাটা। অর্থাৎ যে সংখ্যাগুলোতে দশমিক আছে তারা সবাই Float টাইপের ডাটা। এরকম আরো 6.99, 2.33, 89.44 সবাই ফ্লোট(Float) টাইপের ডাটা।<br />Java এই ধরনের ডাটাকে float নামে চেনে।</p>
+                            <p>YES বা NO(প্রোগ্রামিং এর ভাষায় true বা false) = এটি তোমাদের কাছে একটু নতুন মনে হতে পারে। কিন্তু নতুন হলেও কঠিন কিছু না। এটি হচ্ছে বুলিয়ান (Boolean) টাইপের ডাটা। আগের ডাটা টাইপ গুলোতে দেখেছো যেমন String এর ক্ষেত্রে যে কোন Sentence বা Set of Sentence ই String এর আওতায় পড়ে। কিন্তু Boolean এমন এক ধরনের ডাটা টাইপ যার ভ্যালু কখনো YES অথবা NO বা প্রোগ্রামিং এর ভাষায় true বা false ছাড়া অন্য কিছু হতে পারবে না। যেমন তোমাকে বলা হলো তোমরা কি যমজ বোন? সেক্ষেত্রে তুমি YES অথবা NO ছাড়া অন্য কিছুই বলতে পারবে না। পরে যখন আমরা উদাহরণগুলো দেখবো তখন এটি আরো পরিস্কার হবে। আপাতত এটুকু ভালোমত বুঝলেই চলবে। <br />Java এই ধরনের ডাটাকে boolean নামে চেনে।</p>
+                            <p>আর মাত্র একটি ডাটা টাইপ সম্পর্কে আমাদের আপাতত জানতে হবে। সেটি হচ্ছে char।</p>
+                            <p>A = এটি ক্যারেকটার (Character) টাইপের ডাটা। যে কোন সিংগেল ক্যারেকটার এর মধ্যে পড়ে। সেটা হতে পারে Uppercase Letter যেমন A থেকে Z পর্যন্ত যে কোন Character অথবা Lowercase Letter যেমন a থেকে z পর্যন্ত যে কোন Character। Numeric যেমন 0 থেকে 9। বা যে কোন Special Character যেমন (!@#$%^&amp;) প্রভৃতি যে কোন Special Character ।<br />Java এই ধরনের ডাটাকে char নামে চেনে।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

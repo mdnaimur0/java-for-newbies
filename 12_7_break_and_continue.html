@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+            border: 1px solid;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+        td, th {
+            padding: 4px 10px;
+            border: 1px solid;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">Break and Continue</h4>
+                            <br>
+                            <p>আমরা break এবং continue এই ব্যাপার দুটো Looping চ্যাপ্টারে আলোচনা না করেই চলে এসেছিলাম। এখন এসো দেখি এদের কাজ কি।</p>
+                            <p><br /><br /></p>
+                            <p><strong>break:</strong></p>
+                            <p>break এর কাজ তো ইতোমধ্যেই দেখলে যে এটি প্রোগ্রামের এক্সিকিউশন থামিয়ে দেয়। যেখানেই break ব্যবহার করবে প্রোগ্রাম সেই লাইনে এসেই এক্সিকিউশন থামিয়ে দেবে।</p>
+                            <p>একটা For Loop এর মধ্যে এটি ব্যবহার করে দেখি:</p>
+                            <br><img class="img" src="img/content_images/12_7_break_and_continue_1.png"><br><br>
+                            <p>এটি সিম্পল For Loop এখন এটির মধ্যে break ব্যবহার করে দেখি:</p>
+                            <br><img class="img" src="img/content_images/12_7_break_and_continue_2.png"><br><br>
+                            <p>আউটপুট:</p>
+                            <br><img class="img" src="img/content_images/12_7_break_and_continue_3.png"><br><br>
+                            <p>তিন বার প্রিন্ট করেই এক্সিকিউশন বন্ধ করে দিয়েছে। কারণ তাকে বলা হয়েছে যখনই দেখবে i এর মান 3 দেখবে তখনই তুমি break করবে অর্থাৎ এক্সিকিউশন বন্ধ করে দেবে।</p>
+                            <p>এখন যদি এখানে break ব্যবহার করি:</p>
+                            <br><img class="img" src="img/content_images/12_7_break_and_continue_4.png"><br><br>
+                            <p>মাত্র এক বার প্রিন্ট করেই তাহলে এক্সিকিউশন বন্ধ করে দেবে।</p>
+                            <p><strong>continue:</strong></p>
+                            <p>continue এর কাজ হলো জাম্প করা। যখন কোন লুপের মধ্যে continue কে ব্যবহার করা হয় তখন এটি বর্তমান ধাপ থেকে পরবর্তী ধাপে জাম্প করে বসে। যেমন দেখো:</p>
+                            <br><img class="img" src="img/content_images/12_7_break_and_continue_5.png"><br><br>
+                            <p>আর আউটপুটটি দেখো:</p>
+                            <br><img class="img" src="img/content_images/12_7_break_and_continue_6.png"><br><br>
+                            <p>আমরা বলেছি যখনই দেখবে i এর মান 3 তখনই continue করবে যার অর্থ এই ধাপের statement এক্সিকিউট না করে পরবর্তী ধাপে চলে যাবে। আউটপুটে খেয়াল করে দেখো 3 নাম্বার ধাপের কাজ কিন্তু সে করে নি। যার কারণে মোট প্রিন্ট হয়েছে 4 বার।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+

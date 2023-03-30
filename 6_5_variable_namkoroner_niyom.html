@@ -1,0 +1,184 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <script type="text/javascript" src="cordova.js"></script> 
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+ 
+    <title>নতুনদের জন্য জাভা</title> 
+
+    <style type="text/css">
+        @font-face {
+          font-family: "solaimanlipi";
+          src: url("res/assets/font/solaimanlipi.ttf");  
+        }
+/*        img{
+          width: 100%;
+        }*/
+        img.img{
+            max-width: 100% !important;
+        }
+    </style>
+    <style type="text/css">
+        body{
+          margin-top:20px;
+          color: #6f9f57 !important;
+          font-family: solaimanlipi;  
+        }
+        a{
+          color: #6f9f57 !important;
+        }
+        .fas { margin-right:10px; }
+        .panel-body { padding:0px; }
+        .panel-body table tr td { padding-left: 15px }
+        .panel-body .table {margin-bottom: 0px; }
+
+        .slogan{
+            font-family: solaimanlipi;  
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        #logo_and_slogan{
+            position:absolute;             /* position in the center of the screen */
+            left:50%;
+            top:50%;
+            height:50px;                   /* text area height */
+            width:225px;                   /* text area width */
+            text-align:center;
+            padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+            margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                           /* offset horizontal: half of text area width */
+        }
+
+        .slogan_style{
+          margin-top: 20px;
+          color: #6f9f57; 
+          background-color: white;  
+          text-align: center; 
+          border: 1px solid #6f9f57; 
+          border-radius: 5px; 
+          font-family: solaimanlipi; 
+          padding: 5px; 
+          font-size: 16px;
+        }
+/*        .navbar-header{
+            background-color: #6f9f57;
+        }*/
+        .anchor{
+          font-size: 30px; 
+          font-weight: bold; 
+          font-family: solaimanlipi; 
+          color: #6f9f57;
+          text-align: center;
+        }
+        .para_heading{
+          padding-bottom: 5px;
+          font-weight: bold;
+          text-align: center;
+        }
+        .para_body{  
+          text-align: justify;
+        }
+        .brand_style{
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 5px !important;
+        }
+    </style> 
+</head>
+
+<body>  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div id="divContainer" class="container">
+            <div class="navbar-header">  
+                <a class="navbar-brand brand_style" href="home.html"><span class="fas fa-arrow-left"></span>Back</a>
+                <a class="navbar-brand brand_style" href="slogan.html"><span class="fas fa-heading"></span>Slogan</a> 
+                <a class="navbar-brand brand_style" href="about_me.html"><span class="fas fa-user"></span>About Me</a> 
+            </div>
+          </div> 
+       </div>
+    </nav>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+
+    <!-- Inner Content Start   -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title para_heading">ভেরিয়েবল নামকরণের নিয়ম</h4><br>
+                            <br>
+                            <p>ভেরিয়েবল ডিক্লেয়ার করার সময় আগে ডাটা টাইপ দিতে হয় তারপর একটা স্পেস দিয়ে ভেরিয়েবলটির নাম দিতে হয়। এটুকু তোমাদের মনে আছে আশা করি।</p>
+                            <p>যখন কোন ভেরিয়েবলের নাম দিবে তখন একটা নিয়ম মেনে নামটি দিতে হয়। অর্থাৎ কোন ভেরিয়েবলের নাম দেয়ার ক্ষেত্রে কিছু নিয়ম আছে এবং নাম দেবার সময় নিয়মগুলো মাথায় রেখে নাম দিতে হবে। চলো আমরা দেখি কি কি নিয়ম মানতে হবে ভেরিয়েবলের নামকরণের ক্ষেত্রে।</p>
+                            <ol>
+                                <li>
+                                    <p>যে কোন ভেরিয়েবল এর নাম অবশ্যই ইংরেজী লেটার দিয়ে শুরু হবে (A to Z বা a to z), বা ডলার সাইন(Dollar Sign) ($) অথবা আন্ডারস্কোর(Underscore) (_)</p>
+                                </li>
+                                <li>
+                                    <p>প্রথম ক্যারেক্টার এর পর যে কোন ক্যারেকটার কম্বিনেশন ব্যবহার করা যাবে।</p>
+                                </li>
+                                <li>
+                                    <p>Java এর কোন কীওয়ার্ড(Keyword) কে ভেরিয়েবল এর নাম হিসেবে ব্যবহার করা যাবে না। (Keyword কী সেটা আমরা পরে ব্যাখ্যা করবো, আপাতত বিষয়টা মাথায় রাখলেই চলবে)</p>
+                                </li>
+                                <li>
+                                    <p>আমরা আগেই বলেছি Java একটি Case Sensitive প্রোগ্রামিং ল্যাঙ্গুয়েজ। myName এবং myname এই দুটি জাভার কাছে আলাদা। তাই তুমি যদি ভেরিয়েবল ডিক্লেয়ার করো myName তাহলে পরবর্তীতে যখন ভেরিয়েবলটি ব্যবহার করতে যাবে তখন তোমাকে অবশ্যই myName ই ব্যবহার করতে হবে, myname না।</p>
+                                </li>
+                                <li>
+                                    <p>আর যখন কোন ভেরিয়েবল এর নাম লম্বা হবে যেমন moneyInMyPocket বা moneyInPrachiPocket বা totalMoneyInOurPocket এরকম ক্ষেত্রে Preferable উপায় হচ্ছে ক্যামেল কেস(Camel Case) ব্যবহার করা। অর্থাৎ প্রথম ওয়ার্ডটির প্রথম ক্যারেক্টার ছোট হাতের বা (Lower Case) এবং পরবর্তী সবগুলো ওয়ার্ডে প্রথম কারেক্টারটি বড় হাতের বা Capital Letter।</p>
+                                </li>
+                            </ol>
+                            <p>&nbsp;</p>
+                            <p></p>
+                            <p>ভেরিয়েবলের ধরন(Type):</p>
+                            <p>ভেরিয়েবল তিন ধরনের হয়।</p>
+                            <ul>
+                                <li>
+                                    <p>Local Variable</p>
+                                </li>
+                                <li>
+                                    <p>Instance Variable এবং</p>
+                                </li>
+                                <li>
+                                    <p>Static Variable</p>
+                                </li>
+                            </ul>
+                            <p>এটির বিস্তারিত আমরা পরবর্তী আরো দুটি চ্যাপ্টার পরে আলোচনা করবো।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content End   -->
+
+  </div> 
+</body>
+<script type="text/javascript">  
+    jQuery(document).ready(function($) {   
+         
+    });
+</script>
+ 
+</html>
+
+
